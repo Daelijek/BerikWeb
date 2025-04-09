@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" viewBox="0 0 512 512">
+	<defs>
+		<filter id="filter6886756840" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="64"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter6886756840)">
+		<path transform="matrix(1 0 0 1 128 128)" d="M128 0C57.3075 0 0 57.3075 0 128L0 128.192C0 198.884 57.1156 256 127.808 256L128 256C198.692 256 256 198.884 256 128.192L256 128C256 57.3075 198.884 0 128.192 0L128 0Z" fill-rule="nonzero" fill="rgb(26, 86, 219)" fill-opacity="0.1"/>
+	</g>
+</svg>

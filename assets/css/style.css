@@ -1,0 +1,131 @@
+header {
+  background-color: #000;
+  border-bottom: 1px solid rgba(26, 86, 219, 0.2);
+}
+
+.nav {
+  max-width: 1400px;
+  height: 80px;
+  color: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+.nav_logo {
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.navbar_list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar_list a {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Space Grotesk";
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.navbar_item:not(:last-child) {
+  margin-right: 50px;
+}
+
+main {
+  background-color: #000;
+  padding: 0 20px 0 20px;
+  /* background: rgb(26,86,219);
+background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, rgba(0,0,0,1) 73%); */
+}
+
+.main {
+  max-width: 1400px;
+  color: #fff;
+  font-family: "Space Grotesk";
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  padding: 100px 0 100px 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 96px;
+}
+
+.title_label {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  width: 50%;
+  margin: auto;
+}
+
+.works {
+  max-width: 1400px;
+  color: #fff;
+  font-family: "Space Grotesk";
+  align-items: center;
+  margin: auto;
+  padding: 115px 0 115px 0;
+}
+
+.works_title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.cards_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  width: 31%;
+  box-sizing: border-box;
+}
+
+.card img {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.02);
+}
+
+.card_title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card_description {
+  display: inline;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: rgba(26, 86, 219, 0.2);
+  padding: 5px 10px 5px 10px;
+  border-radius: 100px;
+}
+
+.quote {
+  background: rgb(26,86,219);
+background: linear-gradient(40deg, rgba(26,86,219,1) 0%, rgba(12,41,105,1) 0%, rgba(5,16,42,1) 0%, rgba(0,0,0,1) 50%, rgba(5,16,42,1) 100%, rgba(12,41,105,1) 100%, rgba(26,86,219,1) 100%);
+}
