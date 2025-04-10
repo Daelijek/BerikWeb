@@ -14,7 +14,7 @@ header {
   padding: 0 20px 0 20px;
 }
 
-.nav_logo {
+.nav_logo a {
   color: #fff;
   font-family: "Space Grotesk";
   font-weight: 500;
@@ -27,10 +27,33 @@ header {
 }
 
 .navbar_list a {
+  position: relative;
   color: rgba(255, 255, 255, 0.8);
   font-family: "Space Grotesk";
   font-weight: 300;
   font-size: 16px;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.navbar_list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  /* чуть ниже текста */
+  width: 0%;
+  height: 2px;
+  background-color: rgba(26, 86, 219, 1);
+  transition: width 0.3s ease;
+}
+
+.navbar_list a:hover {
+  color: rgba(26, 86, 219, 1);
+}
+
+.navbar_list a:hover::after {
+  width: 100%;
 }
 
 .navbar_item:not(:last-child) {
@@ -104,6 +127,8 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 .card img {
   border-radius: 8px;
   margin-bottom: 15px;
+  height: 305px;
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
@@ -128,16 +153,14 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 
 .quote {
   background: rgb(26, 86, 219);
-  background: linear-gradient(
-    40deg,
-    rgba(26, 86, 219, 1) 0%,
-    rgba(12, 41, 105, 1) 0%,
-    rgba(5, 16, 42, 1) 0%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(5, 16, 42, 1) 100%,
-    rgba(12, 41, 105, 1) 100%,
-    rgba(26, 86, 219, 1) 100%
-  );
+  background: linear-gradient(40deg,
+      rgba(26, 86, 219, 1) 0%,
+      rgba(12, 41, 105, 1) 0%,
+      rgba(5, 16, 42, 1) 0%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(5, 16, 42, 1) 100%,
+      rgba(12, 41, 105, 1) 100%,
+      rgba(26, 86, 219, 1) 100%);
   padding: 100px 20px 100px 20px;
   color: #fff;
   font-family: "Space Grotesk";
@@ -242,6 +265,11 @@ footer {
   font-family: "Space Grotesk";
   color: #fff;
   font-size: 16px;
+  transition: 0.4s ease;
+}
+
+.footer_contacts a:hover {
+  color: rgba(26, 86, 219, 1);
 }
 
 .social_media {
@@ -258,7 +286,7 @@ footer {
 .social_media img {
   width: 50px;
   filter: invert(100%);
-  padding: 10px;
+  padding: 15px;
 }
 
 .rights {

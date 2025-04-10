@@ -1,0 +1,202 @@
+header {
+    background-color: #000;
+    border-bottom: 1px solid rgba(26, 86, 219, 0.2);
+}
+
+.nav {
+    max-width: 1400px;
+    height: 80px;
+    color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+}
+
+.nav_logo a {
+    color: #fff;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.navbar_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar_list a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Space Grotesk";
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.navbar_list a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* чуть ниже текста */
+    width: 0%;
+    height: 2px;
+    background-color: rgba(26, 86, 219, 1);
+    transition: width 0.3s ease;
+}
+
+.navbar_list a:hover {
+    color: rgba(26, 86, 219, 1);
+}
+
+.navbar_list a:hover::after {
+    width: 100%;
+}
+
+.navbar_item:not(:last-child) {
+    margin-right: 50px;
+}
+
+main {
+    background-color: #000;
+    font-family: "Space Grotesk";
+    border-bottom: 1px solid rgba(26, 86, 219, 0.2);
+}
+
+.main_inner {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 20px 0 20px;
+}
+
+.works_info {
+    padding: 50px 0 50px 0;
+}
+
+.works_author {
+    font-weight: 600;
+    font-size: 60px;
+    color: #fff;
+}
+
+.works_skills {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.category_list {
+    color: #fff;
+    display: flex;
+    width: 33%;
+    justify-content: space-between;
+}
+
+.category_item {
+    display: flex;
+    align-items: center;
+    border: 2px solid #1A56DB;
+    border-radius: 20px;
+    padding: 5px 20px 5px 20px;
+    transition: 0.3s ease;
+}
+
+.category_item:hover {
+    background-color: #1A56DB;
+}
+
+.cards_list {
+    padding: 50px 0 50px 0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    width: 31%;
+    box-sizing: border-box;
+}
+
+.card img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    height: 305px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.02);
+}
+
+.card_title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card_description {
+    display: inline;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: rgba(26, 86, 219, 0.2);
+    padding: 5px 10px 5px 10px;
+    border-radius: 100px;
+}
+
+footer {
+    background-color: #000;
+    padding: 40px 20px 40px 20px;
+}
+
+.footer {
+    margin: auto;
+    max-width: 1400px;
+    align-items: center;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.footer_contacts a {
+    font-family: "Space Grotesk";
+    color: #fff;
+    font-size: 16px;
+    transition: 0.4s ease;
+}
+
+.footer_contacts a:hover {
+    color: rgba(26, 86, 219, 1);
+}
+
+.social_media {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.social_media a {
+    background-color: #1d1a33;
+    border-radius: 50%;
+}
+
+.social_media img {
+    width: 50px;
+    filter: invert(100%);
+    padding: 15px;
+}
+
+.rights {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: "Space Grotesk";
+    text-align: center;
+    align-items: center;
+}
