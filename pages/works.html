@@ -1,133 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/works.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/works.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Страница работ</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="nav">
-            <div class="nav_logo"><a href="index.html">Berik Zhunusbek</a></div>
-            <div class="nav_navbar">
-                <ul class="navbar_list">
-                    <li class="navbar_item"><a href="">About</a></li>
-                    <li class="navbar_item"><a href="works.html">Works</a></li>
-                    <li class="navbar_item"><a href="">Contact</a></li>
-                </ul>
-            </div>
+      <div class="nav">
+        <div class="nav_logo"><a href="index.html">Berik Zhunusbek</a></div>
+        <div class="nav_navbar">
+          <ul class="navbar_list">
+            <li class="navbar_item">
+              <a href="/pages/aboutMe.html">About me</a>
+            </li>
+            <li class="navbar_item"><a href="works.html">Works</a></li>
+          </ul>
         </div>
+      </div>
     </header>
     <main>
-        <div class="main_inner">
-            <div class="works_info">
-                <div class="works_author">
-                    Berik Zhunusbek
-                </div>
-                <div class="works_skills">
-                    Sculptor • Animator • CG Artist
-                </div>
-            </div>
-
-            <div class="works_category">
-                <ul class="category_list">
-                    <li class="category_item">All</li>
-                    <li class="category_item">Sculpture</li>
-                    <li class="category_item">Animation</li>
-                    <li class="category_item">CG Art</li>
-                </ul>
-            </div>
-
-            <div class="cards_list">
-                <div class="card">
-                    <img src="../assets/images/sculptures/mother/DSC_0948.jpg" alt="" />
-                    <div class="card_title">Mother</div>
-                    <div class="card_description">Sculpture</div>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/images/sculptures/Doda/DSC_0886.jpg" alt="" />
-                    <div class="card_title">Doda</div>
-                    <div class="card_description">Sculpture</div>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/images/sculptures/Jantalas/DSC_0905.jpg" alt="" />
-                    <div class="card_title">The mess</div>
-                    <div class="card_description">Sculpture</div>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/images/card4.png" alt="" />
-                    <div class="card_title">Temporal Shift</div>
-                    <div class="card_description">3D Animation</div>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/images/card5.png" alt="" />
-                    <div class="card_title">Digital Genesis</div>
-                    <div class="card_description">Sculpture</div>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/images/card6.png" alt="" />
-                    <div class="card_title">Void Echo</div>
-                    <div class="card_description">Mixed Media</div>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/images/card4.png" alt="" />
-                    <div class="card_title">Temporal Shift</div>
-                    <div class="card_description">3D Animation</div>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/images/card5.png" alt="" />
-                    <div class="card_title">Digital Genesis</div>
-                    <div class="card_description">Sculpture</div>
-                </div>
-
-                <div class="card">
-                    <img src="../assets/images/card6.png" alt="" />
-                    <div class="card_title">Void Echo</div>
-                    <div class="card_description">Mixed Media</div>
-                </div>
-            </div>
+      <div class="main_inner">
+        <div class="works_info">
+          <div class="works_author">Berik Zhunusbek</div>
+          <div class="works_skills">
+            Sculptor • Animator • Director of Computer Graphics • Photographer •
+            Actor
+          </div>
         </div>
+
+        <div class="works_category">
+          <ul class="category_list">
+            <li class="category_item" data-category="all">All</li>
+            <li class="category_item" data-category="sculpture">Sculpture</li>
+            <li class="category_item" data-category="drawing">Drawing</li>
+            <li class="category_item" data-category="covers">Covers</li>
+          </ul>
+        </div>
+
+        <div class="cards_list">
+          <!-- Sculpture Cards -->
+          <div class="card sculpture">
+            <img
+              src="../assets/images/sculptures/mother/DSC_0948.jpg"
+              alt="Mother sculpture"
+            />
+            <div class="card_title">Mother</div>
+            <div class="card_description">Sculpture</div>
+          </div>
+
+          <div class="card sculpture">
+            <img
+              src="../assets/images/sculptures/Doda/DSC_0886.jpg"
+              alt="Doda sculpture"
+            />
+            <div class="card_title">Doda</div>
+            <div class="card_description">Sculpture</div>
+          </div>
+
+          <div class="card sculpture">
+            <img
+              src="../assets/images/sculptures/Jantalas/DSC_0905.jpg"
+              alt="The mess sculpture"
+            />
+            <div class="card_title">The mess</div>
+            <div class="card_description">Sculpture</div>
+          </div>
+
+          <div class="card sculpture">
+            <img
+              src="../assets/images/sculptures/balapan/DSC_5989.jpg"
+              alt="Balapan sculpture"
+            />
+            <div class="card_title">Balapan</div>
+            <div class="card_description">Sculpture</div>
+          </div>
+
+          <div class="card sculpture">
+            <img
+              src="../assets/images/sculptures/gaukhartas/DSC_0952.jpg"
+              alt="Gaukhartas sculpture"
+            />
+            <div class="card_title">Gaukhartas</div>
+            <div class="card_description">Sculpture</div>
+          </div>
+
+          <!-- Drawing Cards -->
+          <div class="card drawing">
+            <img
+              src="../assets/images/drawing/ainash/Айнаш.jpg"
+              alt="Ainash drawing"
+            />
+            <div class="card_title">Ainash</div>
+            <div class="card_description">Drawing</div>
+          </div>
+
+          <div class="card drawing">
+            <img
+              src="../assets/images/drawing/driver/Водитель.jpg"
+              alt="Driver drawing"
+            />
+            <div class="card_title">Driver</div>
+            <div class="card_description">Drawing</div>
+          </div>
+
+          <div class="card drawing">
+            <img
+              src="../assets/images/drawing/lazzat/Лаззат.jpg"
+              alt="Lazzat drawing"
+            />
+            <div class="card_title">Lazzat</div>
+            <div class="card_description">Drawing</div>
+          </div>
+
+          <!-- Covers Cards -->
+          <div class="card covers">
+            <img
+              src="../assets/images/cover/steppeExpress/Плакат Степной экспресс01.jpg"
+              alt="Steppe express cover"
+            />
+            <div class="card_title">Steppe express</div>
+            <div class="card_description">Covers</div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="footer">
-            <div class="footer_inner">
-                <div class="nav_logo"><a href="index.html">Berik Zhunusbek</a></div>
-                <div class="footer_contacts">
-                    <a href="tel:+77761466000">+7 776 146 6000</a><br />
-                    <a href="">@gmail.com</a>
-                </div>
-            </div>
-            <div class="social_media">
-                <a target="_blank"
-                    href="https://www.youtube.com/@%D0%91%D0%B5%D1%80%D0%B8%D0%BA%D0%96%D1%83%D0%BD%D1%83%D1%81%D0%B1%D0%B5%D0%BA">
-                    <img src="../assets/images/youtube.png" alt="" />
-                </a>
-                <a target="_blank" href="https://x.com/birgebai"><img src="../assets/images/twitter (1).png"
-                        alt="" /></a>
-            </div>
-            <div class="rights">
-                © 2024 Berik Zhunusbek. All rights reserved.
-            </div>
+      <div class="footer">
+        <div class="footer_inner">
+          <div class="nav_logo"><a href="index.html">Berik Zhunusbek</a></div>
+          <div class="footer_contacts">
+            <a href="tel:+77761466000">+7 776 146 6000</a><br />
+          </div>
         </div>
+        <div class="social_media">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/@%D0%91%D0%B5%D1%80%D0%B8%D0%BA%D0%96%D1%83%D0%BD%D1%83%D1%81%D0%B1%D0%B5%D0%BA"
+          >
+            <img src="../assets/images/youtube.png" alt="" />
+          </a>
+          <a target="_blank" href="https://x.com/birgebai"
+            ><img src="../assets/images/twitter (1).png" alt=""
+          /></a>
+          <a target="_blank" href=""
+            ><img src="../assets/images/mail.png" alt=""
+          /></a>
+        </div>
+        <div class="rights">© 2024 Berik Zhunusbek. All rights reserved.</div>
+      </div>
     </footer>
-</body>
-
+  </body>
+  <script src="/assets/js/main.js"></script>
 </html>
