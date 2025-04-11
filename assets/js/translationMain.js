@@ -16,7 +16,7 @@ const translations = {
 
     // Навыки
     skills_first:
-      "3D Modeling <br><br>Motion Design <br><br>Concept Art <br><br>Virtual Reality",
+      "3D Modeling <br><br>Sculptor <br><br>Concept Art <br><br>Virtual Reality",
     skills_second:
       "Digital Sculpture <br><br>Character Animation <br><br>Visual Effects <br><br>Interactive Design",
 
@@ -39,7 +39,7 @@ const translations = {
     about_descr:
       "Как мультидисциплинарный цифровой художник, я исследую пересечение скульптуры, анимации и компьютерной графики. Моя работа направлена на объединение традиционных художественных практик и передовых технологий, создавая иммерсивные впечатления, которые бросают вызов восприятию и реальности.",
     skills_first:
-      "3D Моделирование <br><br>Моушн-дизайн <br><br>Концепт-арт <br><br>Виртуальная реальность",
+      "3D Моделирование <br><br>Скульптор <br><br>Концепт-арт <br><br>Виртуальная реальность",
     skills_second:
       "Цифровая скульптура <br><br>Анимация персонажей <br><br>Визуальные эффекты <br><br>Интерактивный дизайн",
     font_family: "'Manrope', sans-serif",
@@ -62,7 +62,7 @@ const translations = {
     skills_first:
       "3D Модельдеу <br><br>Қозғалыс дизайны <br><br>Концепт-арт <br><br>Виртуалды шындық",
     skills_second:
-      "Цифрлық мүсін <br><br>Кейіпкер анимациясы <br><br>Көрнекі эффектілер <br><br>Интерактивті дизайн",
+      "Цифрлық мүсін <br><br>Мүсін <br><br>Көрнекі эффектілер <br><br>Интерактивті дизайн",
     font_family: "'Manrope', sans-serif",
     font_weight: "500",
     letter_spacing: "-0.01em",

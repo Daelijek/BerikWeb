@@ -1,19 +1,18 @@
-//! Фильтрация по категориям с пагинацией
+//! Фильтрация по категориям с улучшенной пагинацией
 function filterCategory(category) {
   const cards = document.querySelectorAll(".card");
   const footer = document.querySelector("footer");
-  const paginationContainer = document.querySelector(".pagination");
+  const pagination = document.querySelector(".pagination");
   let visibleCount = 0;
 
-  // Приводим категорию к нижнему регистру
   const normalizedCategory = category.toLowerCase();
 
-  // Скрываем все карточки сначала
+  // Сначала скрываем все карточки
   cards.forEach((card) => {
     card.style.display = "none";
   });
 
-  // Показываем соответствующие категории
+  // Показываем карточки выбранной категории
   cards.forEach((card) => {
     const shouldShow =
       normalizedCategory === "all" ||
@@ -25,8 +24,12 @@ function filterCategory(category) {
     }
   });
 
-  // Обновляем пагинацию
-  updatePagination(visibleCount, normalizedCategory);
+  // Особый режим для категорий с малым количеством карточек
+  if (normalizedCategory !== "all" && visibleCount <= 9) {
+    pagination.style.display = "none";
+  } else {
+    updatePagination(visibleCount, normalizedCategory);
+  }
 
   if (footer) {
     footer.style.position = visibleCount > 0 ? "absolute" : "static";
@@ -95,7 +98,7 @@ function showPage(pageNumber, category) {
     if (shouldShow) visibleInPage++;
   });
 
-  // Обновляем футер если нужно
+  // Обновляем футер
   const footer = document.querySelector("footer");
   if (footer) {
     footer.style.position = visibleInPage > 0 ? "absolute" : "static";

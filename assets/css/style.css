@@ -4,7 +4,7 @@ header {
 }
 
 .nav {
-  max-width: 1400px;
+  max-width: 60%;
   height: 80px;
   color: #fff;
   margin: auto;
@@ -128,7 +128,7 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 }
 
 .main {
-  max-width: 1400px;
+  max-width: 60%;
   color: #fff;
   font-family: "Space Grotesk";
   align-items: center;
@@ -157,7 +157,7 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 }
 
 .works {
-  max-width: 1400px;
+  max-width: 60%;
   color: #fff;
   font-family: "Space Grotesk";
   align-items: center;
@@ -258,7 +258,7 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 }
 
 .quote_inner {
-  max-width: 1400px;
+  max-width: 60%;
   margin: auto;
 }
 
@@ -288,7 +288,7 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 }
 
 .about_inner {
-  max-width: 1400px;
+  max-width: 60%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -343,7 +343,7 @@ footer {
 
 .footer {
   margin: auto;
-  max-width: 1400px;
+  max-width: 60%;
   align-items: center;
 }
 
