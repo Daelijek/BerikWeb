@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../../assets/css/detailedInfo/sculpture/mother.css"
+    />
+    <link rel="stylesheet" href="../../../assets/css/reset.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sculpture - Doda</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="nav_logo">
+          <a href="../../../index.html">Berik Zhunusbek</a>
+        </div>
+        <div class="nav_navbar">
+          <ul class="navbar_list">
+            <li class="navbar_item">
+              <a href="../../aboutMe.html">About me</a>
+            </li>
+            <li class="navbar_item"><a href="../../works.html">Works</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main_inner">
+        <div class="product">
+          <div class="product_info">
+            <div class="prod_name">
+              <div class="product_title">Doda</div>
+              <div class="prod_tag">Sculpture</div>
+            </div>
+            <div class="prod_descr">
+              <div class="prod concept">
+                <div class="prod_title">Concept</div>
+                <div class="prod_text">
+                  "Doda" is a sculpture that represents a group of riders
+                  involved in the Kokpar game. It embodies the themes of
+                  competition, resilience, and the connection between humans and
+                  horses in the context of ancient traditions. The form merges
+                  human strength with the dynamic movement of the game,
+                  reflecting both its historical roots and modern significance.
+                </div>
+              </div>
+              <div class="prod process">
+                <div class="prod_title">Processes & Tools</div>
+                <div class="prod_text">
+                  Carved from poplar wood using traditional tools, "Doda"
+                  captures the energy of the Kokpar game. The piece was created
+                  during the years 1994-1997 and reflects a period of intense
+                  cultural exploration. The artist worked meticulously to
+                  preserve the raw texture of the wood, enhancing its natural
+                  grains and knots to evoke the strength and movement of the
+                  riders.
+                </div>
+              </div>
+              <div class="prod details">
+                <div class="prod_title">Technical Details</div>
+                <div class="prod_text">
+                  Material: Poplar wood<br />
+                  Height: 50 cm<br />
+                  Tools: Chisels, rasps, sandpaper<br />
+                  Finish: Natural oil, matte<br />
+                  Year: 1994-1997
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prod_img">
+            <img
+              src="../../../assets/images/sculptures/Doda/DSC_0886.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="gallery">
+          <img
+            src="../../../assets/images/sculptures/Doda/DSC_0885.jpg"
+            alt=""
+          />
+          <img
+            src="../../../assets/images/sculptures/Doda/DSC_0893.jpg"
+            alt=""
+          />
+          <img
+            src="../../../assets/images/sculptures/Doda/DSC_0901.jpg"
+            alt=""
+          />
+          <img
+            src="../../../assets/images/sculptures/Doda/DSC_0886.jpg"
+            alt=""
+          />
+          <img
+            src="../../../assets/images/sculptures/Doda/DSC_0890.jpg"
+            alt=""
+          />
+          <img
+            src="../../../assets/images/sculptures/Doda/DSC_0904.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer_inner">
+          <div class="nav_logo"><a href="index.html">Berik Zhunusbek</a></div>
+          <div class="footer_contacts">
+            <a href="tel:+77761466000">+7 776 146 6000</a><br />
+          </div>
+        </div>
+        <div class="social_media">
+          <a
+            target="_blank"
+            href="https://www.youtube.com/@%D0%91%D0%B5%D1%80%D0%B8%D0%BA%D0%96%D1%83%D0%BD%D1%83%D1%81%D0%B1%D0%B5%D0%BA"
+          >
+            <img src="../../../assets/images/youtube.png" alt="" />
+          </a>
+          <a target="_blank" href="https://x.com/birgebai"
+            ><img src="../../../assets/images/twitter (1).png" alt=""
+          /></a>
+          <a target="_blank" href=""
+            ><img src="../../../assets/images/mail.png" alt=""
+          /></a>
+        </div>
+        <div class="rights">© 2024 Berik Zhunusbek. All rights reserved.</div>
+      </div>
+    </footer>
+    <script>
+      const imgElement = document.querySelector(".prod_img img");
+      const imagePaths = [
+        "../../../assets/images/sculptures/Doda/0885.png",
+        "../../../assets/images/sculptures/Doda/0893.png",
+        "../../../assets/images/sculptures/Doda/0901.png",
+        "../../../assets/images/sculptures/Doda/0886.png",
+        "../../../assets/images/sculptures/Doda/0890.png",
+        "../../../assets/images/sculptures/Doda/0904.png",
+      ];
+
+      let currentIndex = 0;
+
+      setInterval(() => {
+        // Плавно скрываем изображение
+        imgElement.style.opacity = 0;
+
+        setTimeout(() => {
+          // Меняем изображение
+          currentIndex = (currentIndex + 1) % imagePaths.length;
+          imgElement.src = imagePaths[currentIndex];
+
+          // Плавно показываем новое изображение
+          imgElement.style.opacity = 1;
+        }, 1000); // подождать, пока скроется
+      }, 10000); // каждые 10 секунд
+    </script>
+  </body>
+</html>
