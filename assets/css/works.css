@@ -4,7 +4,7 @@ header {
 }
 
 .nav {
-  max-width: 1400px;
+  max-width: 60%;
   height: 80px;
   color: #fff;
   margin: auto;
@@ -60,6 +60,66 @@ header {
   margin-right: 50px;
 }
 
+/* Обёртка для language-selector — добавляем underline при ховере */
+.language_select_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.language_select_wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: rgba(26, 86, 219, 1);
+  transition: width 0.3s ease;
+}
+
+.language_select_wrapper:hover::after {
+  width: 50%;
+}
+
+.lang-switcher select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.lang-switcher select:focus {
+  outline: none;
+  border-color: #1a56db;
+}
+
+/* Стили для самого select */
+#language-selector {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Space Grotesk";
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  padding-right: 20px;
+}
+
+/* Стили для выпадающих опций */
+#language-selector option {
+  color: #000;
+  background-color: #fff;
+}
+
+/* При наведении на сам select (цвет текста меняется) */
+#language-selector:hover {
+  color: rgba(26, 86, 219, 1);
+}
+
 main {
   background-color: #000;
   font-family: "Space Grotesk";
@@ -67,7 +127,7 @@ main {
 }
 
 .main_inner {
-  max-width: 1400px;
+  max-width: 60%;
   margin: auto;
   padding: 0 20px 0 20px;
 }
@@ -195,6 +255,32 @@ main {
   transition: all 0.3s ease;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 40px 0;
+  gap: 10px;
+}
+
+.pagination-btn {
+  padding: 8px 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-btn:hover {
+  background: #f0f0f0;
+}
+
+.pagination-btn.active {
+  background: #1a56db;
+  color: white;
+  border-color: #1a56db;
+}
+
 footer {
   background-color: #000;
   padding: 40px 20px 40px 20px;
@@ -203,7 +289,7 @@ footer {
 
 .footer {
   margin: auto;
-  max-width: 1400px;
+  max-width: 60%;
   align-items: center;
 }
 

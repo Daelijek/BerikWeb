@@ -1,0 +1,61 @@
+header {
+  background-color: #000;
+  border-bottom: 1px solid rgba(26, 86, 219, 0.2);
+}
+
+.nav {
+  max-width: 60%;
+  height: 80px;
+  color: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+.nav_logo a {
+  color: #fff;
+  font-family: "Space Grotesk";
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.navbar_list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar_list a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Space Grotesk";
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.navbar_list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  /* чуть ниже текста */
+  width: 0%;
+  height: 2px;
+  background-color: rgba(26, 86, 219, 1);
+  transition: width 0.3s ease;
+}
+
+.navbar_list a:hover {
+  color: rgba(26, 86, 219, 1);
+}
+
+.navbar_list a:hover::after {
+  width: 100%;
+}
+
+.navbar_item:not(:last-child) {
+  margin-right: 50px;
+}

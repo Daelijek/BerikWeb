@@ -60,6 +60,66 @@ header {
   margin-right: 50px;
 }
 
+/* Обёртка для language-selector — добавляем underline при ховере */
+.language_select_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.language_select_wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: rgba(26, 86, 219, 1);
+  transition: width 0.3s ease;
+}
+
+.language_select_wrapper:hover::after {
+  width: 50%;
+}
+
+.lang-switcher select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.lang-switcher select:focus {
+  outline: none;
+  border-color: #1a56db;
+}
+
+/* Стили для самого select */
+#language-selector {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Space Grotesk";
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  padding-right: 20px;
+}
+
+/* Стили для выпадающих опций */
+#language-selector option {
+  color: #000;
+  background-color: #fff;
+}
+
+/* При наведении на сам select (цвет текста меняется) */
+#language-selector:hover {
+  color: rgba(26, 86, 219, 1);
+}
+
 main {
   background-color: #000;
   border-bottom: 1px solid rgba(26, 86, 219, 0.2);
@@ -334,4 +394,37 @@ footer {
   font-family: "Space Grotesk";
   text-align: center;
   align-items: center;
+}
+
+.language-change {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+/* Анимация смены языка */
+[data-i18n],
+[data-i18n-en],
+.card_title,
+.card_description {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Настройки шрифтов */
+body {
+  transition: font-family 0.3s ease, font-weight 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+
+body[lang="en"] {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+body[lang="ru"],
+body[lang="kz"] {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
 }

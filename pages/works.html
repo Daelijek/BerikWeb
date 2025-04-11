@@ -18,13 +18,22 @@
   <body>
     <header>
       <div class="nav">
-        <div class="nav_logo"><a href="index.html">Berik Zhunusbek</a></div>
+        <div class="nav_logo"><a href="/index.html">Berik Zhunusbek</a></div>
         <div class="nav_navbar">
           <ul class="navbar_list">
             <li class="navbar_item">
               <a href="/pages/aboutMe.html">About me</a>
             </li>
             <li class="navbar_item"><a href="works.html">Works</a></li>
+            <li class="navbar_item language_wrapper">
+              <div class="language_select_wrapper">
+                <select id="language-selector">
+                  <option value="en">EN</option>
+                  <option value="ru">RU</option>
+                  <option value="kz">KZ</option>
+                </select>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -51,10 +60,12 @@
         <div class="cards_list">
           <!-- Sculpture Cards -->
           <div class="card sculpture">
-            <img
-              src="../assets/images/sculptures/mother/DSC_0948.jpg"
-              alt="Mother sculpture"
-            />
+            <a href="../pages/detailedInfo/Sculpture/mother.html">
+              <img
+                src="../assets/images/sculptures/mother/DSC_0948.jpg"
+                alt="Mother sculpture"
+              />
+            </a>
             <div class="card_title">Mother</div>
             <div class="card_description">Sculpture</div>
           </div>
@@ -123,6 +134,15 @@
             <div class="card_description">Drawing</div>
           </div>
 
+          <div class="card drawing">
+            <img
+              src="../assets/images/drawing/lazzat/Лаззат.jpg"
+              alt="Lazzat drawing"
+            />
+            <div class="card_title">Lazzat</div>
+            <div class="card_description">Drawing</div>
+          </div>
+
           <!-- Covers Cards -->
           <div class="card covers">
             <img
@@ -132,6 +152,10 @@
             <div class="card_title">Steppe express</div>
             <div class="card_description">Covers</div>
           </div>
+        </div>
+        <div class="pagination">
+          <button class="pagination-btn" data-page="1">1</button>
+          <button class="pagination-btn" data-page="2">2</button>
         </div>
       </div>
     </main>
