@@ -67,11 +67,9 @@ main {
 }
 
 .full-width-background {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url("../images/016.jpg");
   background-size: cover;
   background-position: center;
@@ -172,17 +170,24 @@ b {
 
 .third_img {
   display: flex;
-  justify-content: center; /* Центрируем всё по горизонтали */
-  gap: 30px; /* Ровные отступы между картинками */
-  flex-wrap: wrap; /* Если экран маленький — изображения переходят на новую строку */
-  margin-top: 20px; /* Отступ сверху (по желанию) */
+  justify-content: center;
+  /* Центрируем всё по горизонтали */
+  gap: 30px;
+  /* Ровные отступы между картинками */
+  flex-wrap: wrap;
+  /* Если экран маленький — изображения переходят на новую строку */
+  margin-top: 20px;
+  /* Отступ сверху (по желанию) */
 }
 
 .third_img img {
-  width: calc((100% - 90px) / 4); /* 4 картинки и 3 промежутка по 30px */
+  width: calc((100% - 90px) / 4);
+  /* 4 картинки и 3 промежутка по 30px */
   object-fit: cover;
-  aspect-ratio: 4 / 3; /* Чтобы все были одного соотношения (опционально) */
-  border-radius: 8px; /* Красивые углы (опционально) */
+  aspect-ratio: 4 / 3;
+  /* Чтобы все были одного соотношения (опционально) */
+  border-radius: 8px;
+  /* Красивые углы (опционально) */
 }
 
 .fourth_inner {
@@ -227,17 +232,24 @@ b {
 
 .five_img {
   display: flex;
-  justify-content: center; /* Центрируем всё по горизонтали */
-  gap: 30px; /* Ровные отступы между картинками */
-  flex-wrap: wrap; /* Если экран маленький — изображения переходят на новую строку */
-  margin-top: 20px; /* Отступ сверху (по желанию) */
+  justify-content: center;
+  /* Центрируем всё по горизонтали */
+  gap: 30px;
+  /* Ровные отступы между картинками */
+  flex-wrap: wrap;
+  /* Если экран маленький — изображения переходят на новую строку */
+  margin-top: 20px;
+  /* Отступ сверху (по желанию) */
 }
 
 .five_img img {
-  width: calc((100% - 90px) / 4); /* 4 картинки и 3 промежутка по 30px */
+  width: calc((100% - 90px) / 4);
+  /* 4 картинки и 3 промежутка по 30px */
   object-fit: cover;
-  aspect-ratio: 4 / 3; /* Чтобы все были одного соотношения (опционально) */
-  border-radius: 8px; /* Красивые углы (опционально) */
+  aspect-ratio: 4 / 3;
+  /* Чтобы все были одного соотношения (опционально) */
+  border-radius: 8px;
+  /* Красивые углы (опционально) */
 }
 
 .six_inner {
@@ -268,24 +280,24 @@ b {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  overflow: visible; /* Добавлено */
+  overflow: visible;
+  /* Добавлено */
 }
 
 .quote {
-  background: linear-gradient(
-    40deg,
-    #1a56db 0%,
-    #0c2969 0%,
-    #05102a 0%,
-    #000 50%,
-    #05102a 100%,
-    #0c2969 100%,
-    #1a56db 100%
-  );
+  background: linear-gradient(40deg,
+      #1a56db 0%,
+      #0c2969 0%,
+      #05102a 0%,
+      #000 50%,
+      #05102a 100%,
+      #0c2969 100%,
+      #1a56db 100%);
   padding: 100px 0;
   color: #fff;
   font-family: "Space Grotesk";
-  position: relative; /* Добавлено */
+  position: relative;
+  /* Добавлено */
 }
 
 .quote_inner {
@@ -297,8 +309,10 @@ b {
 
 .quote-icon {
   width: 8%;
-  display: block; /* Изменено с flex */
-  margin: 0 auto; /* Центрирование */
+  display: block;
+  /* Изменено с flex */
+  margin: 0 auto;
+  /* Центрирование */
 }
 
 /* Остальные стили остаются без изменений */
@@ -314,8 +328,10 @@ b {
   flex-direction: column;
   font-weight: 500;
   font-size: 36px;
-  position: relative; /* Добавлено */
-  z-index: 3; /* Добавлено */
+  position: relative;
+  /* Добавлено */
+  z-index: 3;
+  /* Добавлено */
 }
 
 .seven_inner {
@@ -371,7 +387,7 @@ footer {
 }
 
 .social_media {
-  width: 15%;
+  width: 16%;
   margin: auto;
   justify-content: space-around;
   align-items: center;
@@ -383,12 +399,14 @@ footer {
 .social_media a {
   background-color: #1d1a33;
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .social_media img {
-  width: 50px;
+  width: 100%;
   filter: invert(100%);
-  padding: 13px;
+  padding: 26%;
 }
 
 .rights {

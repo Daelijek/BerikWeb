@@ -4,6 +4,7 @@ const translations = {
     about: "About me",
     works: "Works",
     title: "Berik Zhunusbek",
+    rights: "© 2025 Berik Zhunusbek. All rights reserved.",
     title_label:
       "Sculptor • Animator • Director of Computer Graphics • Photographer • Actor",
     description:
@@ -29,6 +30,7 @@ const translations = {
     about: "Обо мне",
     works: "Работы",
     title: "Берик Жунусбек",
+    rights: "© 2025 Берик Жунусбеков. Все права защищены",
     title_label:
       "Скульптор • Аниматор • Режиссёр компьютерной графики • Фотограф • Актер",
     description:
@@ -50,6 +52,7 @@ const translations = {
     about: "Мен туралы",
     works: "Жұмыстар",
     title: "Берік Жүнісбек",
+    rights: "© 2025 Берік Жүнісбек. Барлық құқықтар қорғалған",
     title_label:
       "Мүсінші • Аниматор • Компьютерлік графика режиссері • Фотограф • Актер",
     description:

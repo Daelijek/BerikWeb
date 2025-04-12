@@ -167,7 +167,8 @@ main {
   background-image: url("../images/worksInfo.png");
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* ← прозрачность */
+  opacity: 0.3;
+  /* ← прозрачность */
   z-index: -1;
 }
 
@@ -208,13 +209,15 @@ main {
   padding: 50px 0;
   color: #fff;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Жёстко 3 колонки */
+  grid-template-columns: repeat(3, 1fr);
+  /* Жёстко 3 колонки */
   gap: 30px;
   justify-items: center;
 }
 
 .card {
-  width: 100%; /* Теперь ширина контролируется grid */
+  width: 100%;
+  /* Теперь ширина контролируется grid */
   box-sizing: border-box;
   transition: all 0.3s ease;
   opacity: 1;
@@ -331,7 +334,7 @@ footer {
 }
 
 .social_media {
-  width: 15%;
+  width: 16%;
   margin: auto;
   justify-content: space-around;
   align-items: center;
@@ -343,12 +346,14 @@ footer {
 .social_media a {
   background-color: #1d1a33;
   border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .social_media img {
-  width: 50px;
+  width: 100%;
   filter: invert(100%);
-  padding: 13px;
+  padding: 26%;
 }
 
 .rights {
