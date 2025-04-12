@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (element) {
         if (selector === ".quote_title") {
           // Используем innerHTML для элемента с картинкой
-          element.innerHTML = `<img src="../assets/images/quote.png" alt=""> ${translations.getTranslation(
+          element.innerHTML = `<img src="assets/images/quote.png" alt=""> ${translations.getTranslation(
             lang,
             key
           )}`;
