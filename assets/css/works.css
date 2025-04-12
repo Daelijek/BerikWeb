@@ -1,3 +1,24 @@
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: all 0.3s ease;
+}
+
+/* Для английской версии */
+html[lang="en"] body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+body[lang="ru"],
+body[lang="kz"] {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
 header {
   background-color: #000;
   border-bottom: 1px solid rgba(26, 86, 219, 0.2);
@@ -16,7 +37,6 @@ header {
 
 .nav_logo a {
   color: #fff;
-  font-family: "Space Grotesk";
   font-weight: 500;
   font-size: 24px;
 }
@@ -29,7 +49,6 @@ header {
 .navbar_list a {
   position: relative;
   color: rgba(255, 255, 255, 0.8);
-  font-family: "Space Grotesk";
   font-weight: 300;
   font-size: 16px;
   text-decoration: none;
@@ -100,7 +119,6 @@ header {
   background: transparent;
   border: none;
   color: rgba(255, 255, 255, 0.8);
-  font-family: "Space Grotesk";
   font-weight: 300;
   font-size: 16px;
   cursor: pointer;
@@ -122,7 +140,6 @@ header {
 
 main {
   background-color: #000;
-  font-family: "Space Grotesk";
   border-bottom: 1px solid rgba(26, 86, 219, 0.2);
 }
 
@@ -300,7 +317,6 @@ footer {
 }
 
 .footer_contacts a {
-  font-family: "Space Grotesk";
   color: #fff;
   font-size: 16px;
   transition: 0.4s ease;
@@ -337,7 +353,20 @@ footer {
 
 .rights {
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Space Grotesk";
   text-align: center;
   align-items: center;
+}
+
+.language-change {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+/* Анимация смены языка */
+[data-i18n],
+[data-i18n-en],
+.card_title,
+.card_description {
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }

@@ -22,9 +22,11 @@
         <div class="nav_navbar">
           <ul class="navbar_list">
             <li class="navbar_item">
-              <a href="aboutMe.html">About me</a>
+              <a href="aboutMe.html" data-i18n="about">About me</a>
             </li>
-            <li class="navbar_item"><a href="works.html">Works</a></li>
+            <li class="navbar_item">
+              <a href="works.html" data-i18n="works">Works</a>
+            </li>
             <li class="navbar_item language_wrapper">
               <div class="language_select_wrapper">
                 <select id="language-selector">
@@ -41,8 +43,8 @@
     <main>
       <div class="main_inner">
         <div class="works_info">
-          <div class="works_author">Berik Zhunusbek</div>
-          <div class="works_skills">
+          <div class="works_author" data-i18n="title">Berik Zhunusbek</div>
+          <div class="works_skills" data-i18n="title_label">
             Sculptor • Animator • Director of Computer Graphics • Photographer •
             Actor
           </div>
@@ -66,8 +68,22 @@
                 alt="Mother sculpture"
               />
             </a>
-            <div class="card_title">Mother</div>
-            <div class="card_description">Sculpture</div>
+            <div
+              class="card_title"
+              data-i18n-en="Mother"
+              data-i18n-ru="Мать"
+              data-i18n-kz="Ана"
+            >
+              Mother
+            </div>
+            <div
+              class="card_description"
+              data-i18n-en="Sculpture"
+              data-i18n-ru="Скульптура"
+              data-i18n-kz="Мүсін"
+            >
+              Sculpture
+            </div>
           </div>
 
           <div class="card sculpture">
@@ -77,8 +93,22 @@
                 alt="Doda sculpture"
               />
             </a>
-            <div class="card_title">Doda</div>
-            <div class="card_description">Sculpture</div>
+            <div
+              class="card_title"
+              data-i18n-en="Doda"
+              data-i18n-ru="Дода"
+              data-i18n-kz="Дода"
+            >
+              Doda
+            </div>
+            <div
+              class="card_description"
+              data-i18n-en="Sculpture"
+              data-i18n-ru="Скульптура"
+              data-i18n-kz="Мүсін"
+            >
+              Sculpture
+            </div>
           </div>
 
           <div class="card sculpture">
@@ -86,8 +116,22 @@
               src="../assets/images/sculptures/Jantalas/DSC_0905.jpg"
               alt="The mess sculpture"
             />
-            <div class="card_title">The mess</div>
-            <div class="card_description">Sculpture</div>
+            <div
+              class="card_title"
+              data-i18n-en="The mess"
+              data-i18n-ru="Беспорядок"
+              data-i18n-kz="Жанталас"
+            >
+              The mess
+            </div>
+            <div
+              class="card_description"
+              data-i18n-en="Sculpture"
+              data-i18n-ru="Скульптура"
+              data-i18n-kz="Мүсін"
+            >
+              Sculpture
+            </div>
           </div>
 
           <div class="card sculpture">
@@ -164,20 +208,29 @@
         <div class="social_media">
           <a
             target="_blank"
-            href="https://www.youtube.com/@%D0%91%D0%B5%D1%80%D0%B8%D0%BA%D0%96%D1%83%D0%BD%D1%83%D1%81%D0%B1%D0%B5%D0%BA"
+            href="https://www.youtube.com/@Junusbek1962/videos"
           >
             <img src="../assets/images/youtube.png" alt="" />
           </a>
-          <a target="_blank" href="https://x.com/birgebai"
-            ><img src="../assets/images/twitter (1).png" alt=""
+          <a
+            target="_blank"
+            href="https://web.facebook.com/BerikZhunusbek/?_rdc=1&_rdr"
+            ><img src="../assets/images/facebook (1).png" alt=""
+          /></a>
+          <a target="_blank" href="https://www.tiktok.com/@berikzhunysbek"
+            ><img src="../assets/images/tik-tok.png" alt=""
           /></a>
           <a target="_blank" href=""
             ><img src="../assets/images/mail.png" alt=""
           /></a>
         </div>
-        <div class="rights">© 2024 Berik Zhunusbek. All rights reserved.</div>
+        <div class="rights" data-i18n="rights">
+          © 2024 Berik Zhunusbek. All rights reserved.
+        </div>
       </div>
     </footer>
+    <script src="../assets/js/translationMain.js"></script>
+    <script src="../assets/js/languageSwitcher.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
-  <script src="../assets/js/main.js"></script>
 </html>
