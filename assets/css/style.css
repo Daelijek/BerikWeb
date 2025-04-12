@@ -1,3 +1,25 @@
+/* Настройки шрифтов */
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: all 0.3s ease;
+}
+
+/* Для английской версии */
+html[lang="en"] body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+
+body[lang="ru"],
+body[lang="kz"] {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
 header {
   background-color: #000;
   border-bottom: 1px solid rgba(26, 86, 219, 0.2);
@@ -16,7 +38,6 @@ header {
 
 .nav_logo a {
   color: #fff;
-  font-family: "Space Grotesk";
   font-weight: 500;
   font-size: 24px;
 }
@@ -29,7 +50,6 @@ header {
 .navbar_list a {
   position: relative;
   color: rgba(255, 255, 255, 0.8);
-  font-family: "Space Grotesk";
   font-weight: 300;
   font-size: 16px;
   text-decoration: none;
@@ -100,7 +120,6 @@ header {
   background: transparent;
   border: none;
   color: rgba(255, 255, 255, 0.8);
-  font-family: "Space Grotesk";
   font-weight: 300;
   font-size: 16px;
   cursor: pointer;
@@ -130,7 +149,6 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 .main {
   max-width: 60%;
   color: #fff;
-  font-family: "Space Grotesk";
   align-items: center;
   text-align: center;
   margin: auto;
@@ -159,7 +177,6 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 .works {
   max-width: 60%;
   color: #fff;
-  font-family: "Space Grotesk";
   align-items: center;
   margin: auto;
   padding: 115px 20px 115px 20px;
@@ -176,17 +193,21 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   padding: 50px 0;
   color: #fff;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Жёстко 3 колонки */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Адаптивные колонки */
   gap: 30px;
   justify-items: center;
 }
 
 .card {
-  width: 100%; /* Теперь ширина контролируется grid */
+  width: 100%;
+  max-width: 400px; /* Максимальная ширина карточки */
   box-sizing: border-box;
   transition: all 0.3s ease;
-  opacity: 1;
-  transform: scale(1);
+  display: flex;
+  flex-direction: column;
 }
 
 .card.hidden {
@@ -204,9 +225,49 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   border-radius: 8px;
   margin-bottom: 15px;
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: 321px; /* Фиксированная высота */
+  object-fit: cover; /* Обрезаем изображение чтобы заполнить пространство */
+  object-position: center; /* Центрируем изображение */
   transition: transform 0.3s ease;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .cards_list {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .card img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards_list {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    height: 300px;
+  }
+}
+
+/* Остальные стили остаются без изменений */
+.card_title {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card_description {
+  display: inline;
+  font-weight: 400;
+  font-size: 14px;
+  background-color: rgba(26, 86, 219, 0.2);
+  padding: 5px 10px;
+  border-radius: 100px;
+  margin-top: auto; /* Прижимаем описание к низу карточки */
 }
 
 .card img:hover {
@@ -254,7 +315,6 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   );
   padding: 100px 20px 100px 20px;
   color: #fff;
-  font-family: "Space Grotesk";
 }
 
 .quote_inner {
@@ -284,7 +344,6 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 .about {
   padding: 120px 20px 120px 20px;
   color: #fff;
-  font-family: "Space Grotesk";
 }
 
 .about_inner {
@@ -354,7 +413,6 @@ footer {
 }
 
 .footer_contacts a {
-  font-family: "Space Grotesk";
   color: #fff;
   font-size: 16px;
   transition: 0.4s ease;
@@ -391,7 +449,6 @@ footer {
 
 .rights {
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Space Grotesk";
   text-align: center;
   align-items: center;
 }
@@ -408,23 +465,4 @@ footer {
 .card_title,
 .card_description {
   transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Настройки шрифтов */
-body {
-  transition: font-family 0.3s ease, font-weight 0.3s ease,
-    letter-spacing 0.3s ease;
-}
-
-body[lang="en"] {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 400;
-  letter-spacing: normal;
-}
-
-body[lang="ru"],
-body[lang="kz"] {
-  font-family: "Manrope", sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.01em;
 }

@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function applyFontSettings(lang) {
     const settings = translations[lang] || translations.en;
+    console.log("Applying font settings:", settings); // Добавьте лог
     document.body.style.fontFamily = settings.font_family;
     document.body.style.fontWeight = settings.font_weight;
     document.body.style.letterSpacing = settings.letter_spacing;

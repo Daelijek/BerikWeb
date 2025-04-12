@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Fonts -->
     <title>Главная страница</title>
   </head>
 
@@ -22,9 +22,11 @@
         <div class="nav_navbar">
           <ul class="navbar_list">
             <li class="navbar_item">
-              <a href="pages/aboutMe.html">About me</a>
+              <a href="pages/aboutMe.html" data-i18n="about">About me</a>
             </li>
-            <li class="navbar_item"><a href="pages/works.html">Works</a></li>
+            <li class="navbar_item">
+              <a href="pages/works.html" data-i18n="works">Works</a>
+            </li>
             <li class="navbar_item language_wrapper">
               <div class="language_select_wrapper">
                 <select id="language-selector">
@@ -128,24 +130,24 @@
             </div>
           </div>
 
-          <div class="card drawing">
+          <div class="card sculpture">
             <img
-              src="assets/images/drawing/ainash/Айнаш.jpg"
-              alt="Ainash drawing"
+              src="assets/images/sculptures/balapan/DSC_5989.jpg"
+              alt="Balapan sculpture"
             />
             <div
               class="card_title"
-              data-i18n-en="Ainash"
-              data-i18n-ru="Айнаш"
-              data-i18n-kz="Айнаш"
+              data-i18n-en="Balapan"
+              data-i18n-ru="Балапан"
+              data-i18n-kz="Балапан"
             >
-              Ainash
+              Balapan
             </div>
             <div
               class="card_description"
-              data-i18n-en="Drawing"
-              data-i18n-ru="Рисунок"
-              data-i18n-kz="Сурет"
+              data-i18n-en="Sculpture"
+              data-i18n-ru="Скульптура"
+              data-i18n-kz="Мүсін"
             >
               Drawing
             </div>
@@ -194,6 +196,52 @@
               data-i18n-kz="Мақалалар"
             >
               Covers
+            </div>
+          </div>
+
+          <div class="card sculpture">
+            <img
+              src="assets/images/sculptures/gaukhartas/DSC_0952.jpg"
+              alt="Gaukhartas sculpture"
+            />
+            <div
+              class="card_title"
+              data-i18n-en="Gaukhartas"
+              data-i18n-ru="Гаухартас"
+              data-i18n-kz="Гаухартас"
+            >
+              Gaukhartas
+            </div>
+            <div
+              class="card_description"
+              data-i18n-en="Sculpture"
+              data-i18n-ru="Скульптура"
+              data-i18n-kz="Мүсін"
+            >
+              Drawing
+            </div>
+          </div>
+
+          <div class="card sculpture">
+            <img
+              src="assets/images/sculptures/deer/DSC_5463.jpg"
+              alt="Deer sculpture"
+            />
+            <div
+              class="card_title"
+              data-i18n-en="Deer"
+              data-i18n-ru="Сайгак"
+              data-i18n-kz="Киік"
+            >
+              Deer
+            </div>
+            <div
+              class="card_description"
+              data-i18n-en="Sculpture"
+              data-i18n-ru="Скульптура"
+              data-i18n-kz="Мүсін"
+            >
+              Drawing
             </div>
           </div>
         </div>
@@ -253,12 +301,17 @@
         <div class="social_media">
           <a
             target="_blank"
-            href="https://www.youtube.com/@%D0%91%D0%B5%D1%80%D0%B8%D0%BA%D0%96%D1%83%D0%BD%D1%83%D1%81%D0%B1%D0%B5%D0%BA"
+            href="https://www.youtube.com/@Junusbek1962/videos"
           >
             <img src="assets/images/youtube.png" alt="" />
           </a>
-          <a target="_blank" href="https://x.com/birgebai"
-            ><img src="assets/images/twitter (1).png" alt=""
+          <a
+            target="_blank"
+            href="https://web.facebook.com/BerikZhunusbek/?_rdc=1&_rdr"
+            ><img src="assets/images/facebook (1).png" alt=""
+          /></a>
+          <a target="_blank" href="https://www.tiktok.com/@berikzhunysbek"
+            ><img src="assets/images/tik-tok.png" alt=""
           /></a>
           <a target="_blank" href=""
             ><img src="assets/images/mail.png" alt=""
