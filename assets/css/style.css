@@ -139,6 +139,110 @@ header {
   color: rgba(26, 86, 219, 1);
 }
 
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  height: 2px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 1px;
+  transition: 0.3s ease;
+}
+
+/* Sidebar */
+.mobile_sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 30px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile_sidebar.active {
+  right: 0;
+}
+
+.mobile_nav_list {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile_nav_list li {
+  margin-bottom: 20px;
+}
+
+.mobile_nav_list a,
+#language-selector-mobile {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  font-weight: 300;
+}
+
+.mobile_sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 150vh;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.mobile_sidebar.active {
+  right: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    max-width: 100%;
+    padding: 0 16px;
+    height: 60px;
+  }
+
+  .nav_logo a {
+    font-size: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    /* даём немного пространства */
+  }
+
+  .nav_navbar {
+    display: none;
+  }
+}
+
 main {
   background-color: #000;
   border-bottom: 1px solid rgba(26, 86, 219, 0.2);
@@ -172,6 +276,60 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   font-size: 18px;
   width: 50%;
   margin: auto;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    max-width: 80%;
+    padding: 80px 20px;
+  }
+
+  .title {
+    font-size: 64px;
+  }
+
+  .title_label {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    max-width: 90%;
+    padding: 60px 16px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .title_label {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .title_label {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
 }
 
 .works {

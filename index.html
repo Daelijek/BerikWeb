@@ -18,8 +18,20 @@
   <body>
     <header>
       <div class="nav">
-        <div class="nav_logo"><a href="index.html">Berik Zhunusbek</a></div>
-        <div class="nav_navbar">
+        <!-- Logo -->
+        <div class="nav_logo">
+          <a href="index.html">Berik Zhunusbek</a>
+        </div>
+    
+        <!-- Hamburger Button (visible on mobile) -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    
+        <!-- Desktop Navigation -->
+        <nav class="nav_navbar" id="navbar">
           <ul class="navbar_list">
             <li class="navbar_item">
               <a href="pages/aboutMe.html" data-i18n="about">About me</a>
@@ -37,9 +49,30 @@
               </div>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
+    
+      <!-- Mobile Sidebar -->
+      <aside class="mobile_sidebar" id="mobileSidebar">
+        <ul class="mobile_nav_list">
+          <li>
+            <a href="pages/aboutMe.html" data-i18n="about">About me</a>
+          </li>
+          <li>
+            <a href="pages/works.html" data-i18n="works">Works</a>
+          </li>
+          <li>
+            <select id="language-selector-mobile">
+              <option value="en">EN</option>
+              <option value="ru">RU</option>
+              <option value="kz">KZ</option>
+            </select>
+          </li>
+        </ul>
+      </aside>
     </header>
+    
+
     <main>
       <div class="main">
         <div class="title">Berik Zhunusbek</div>
@@ -317,7 +350,9 @@
             ><img src="assets/images/mail.png" alt=""
           /></a>
         </div>
-        <div class="rights" data-i18n="rights">© 2024 Berik Zhunusbek. All rights reserved.</div>
+        <div class="rights" data-i18n="rights">
+          © 2024 Berik Zhunusbek. All rights reserved.
+        </div>
       </div>
     </footer>
     <script src="assets/js/translationMain.js"></script>

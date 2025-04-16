@@ -1,16 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Инициализация элементов
   const languageSelector = document.getElementById("language-selector");
+  const languageSelectorMobile = document.getElementById(
+    "language-selector-mobile"
+  );
   const savedLang = localStorage.getItem("language") || "en";
+  const hamburger = document.getElementById("hamburger");
+  const sidebar = document.getElementById("mobileSidebar");
+
+  hamburger.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+  });
+
+  // Закрытие по клику вне сайдбара (опционально)
+  document.addEventListener("click", (e) => {
+    if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
+      sidebar.classList.remove("active");
+    }
+  });
 
   // Применяем сохраненный язык
   languageSelector.value = savedLang;
+  languageSelectorMobile.value = savedLang;
   updatePageLanguage(savedLang, true);
 
-  // Обработчик смены языка
+  if (languageSelectorMobile) {
+    languageSelectorMobile.value = savedLang;
+  }
+
+  // Desktop language selector
   languageSelector.addEventListener("change", function () {
     const lang = this.value;
     localStorage.setItem("language", lang);
+    languageSelectorMobile.value = lang;
+    updatePageLanguage(lang, false);
+  });
+
+  // Mobile language selector
+  languageSelectorMobile.addEventListener("change", function () {
+    const lang = this.value;
+    localStorage.setItem("language", lang);
+    languageSelector.value = lang;
     updatePageLanguage(lang, false);
   });
 
