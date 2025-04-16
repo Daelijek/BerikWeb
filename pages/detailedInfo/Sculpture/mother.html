@@ -97,18 +97,58 @@
   <body>
     <header>
       <div class="nav">
+        <!-- Logo -->
         <div class="nav_logo">
           <a href="../../../index.html">Berik Zhunusbek</a>
         </div>
-        <div class="nav_navbar">
+
+        <!-- Hamburger Button (visible on mobile) -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav_navbar" id="navbar">
           <ul class="navbar_list">
             <li class="navbar_item">
-              <a href="../../aboutMe.html">About me</a>
+              <a href="../../aboutMe.html" data-i18n="about">About me</a>
             </li>
-            <li class="navbar_item"><a href="../../works.html">Works</a></li>
+            <li class="navbar_item">
+              <a href="../../works.html" data-i18n="works">Works</a>
+            </li>
+            <li class="navbar_item language_wrapper">
+              <div class="language_select_wrapper">
+                <select id="language-selector">
+                  <option value="en">EN</option>
+                  <option value="ru">RU</option>
+                  <option value="kz">KZ</option>
+                </select>
+              </div>
+            </li>
           </ul>
-        </div>
+        </nav>
       </div>
+
+      <!-- Mobile Sidebar -->
+      <aside class="mobile_sidebar" id="mobileSidebar">
+        <ul class="mobile_nav_list">
+          <li>
+            <a href="../../aboutMe.html" data-i18n="about">About me</a>
+          </li>
+          <li>
+            <a href="../../works.html" data-i18n="works">Works</a>
+          </li>
+          <li>
+            <select id="language-selector-mobile">
+              <option value="en">EN</option>
+              <option value="ru">RU</option>
+              <option value="kz">KZ</option>
+            </select>
+          </li>
+        </ul>
+      </aside>
     </header>
     <main>
       <div class="main_inner">
