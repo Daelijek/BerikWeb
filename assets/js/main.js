@@ -1,5 +1,6 @@
 //! Фильтрация по категориям с улучшенной пагинацией
 function filterCategory(category) {
+  const CARDS_PER_PAGE = 15; // Changed from 9 to 15
   const cards = document.querySelectorAll(".card");
   const footer = document.querySelector("footer");
   const pagination = document.querySelector(".pagination");
@@ -12,69 +13,81 @@ function filterCategory(category) {
     card.style.display = "none";
   });
 
-  // Показываем карточки выбранной категории
+  // Показываем карточки выбранной категории и считаем их
   cards.forEach((card) => {
     const shouldShow =
       normalizedCategory === "all" ||
       card.classList.contains(normalizedCategory);
 
     if (shouldShow) {
-      card.style.display = "block";
       visibleCount++;
     }
   });
 
-  // Особый режим для категорий с малым количеством карточек
-  if (normalizedCategory !== "all" && visibleCount <= 9) {
-    pagination.style.display = "none";
+  // Обновляем пагинацию только если есть карточки
+  if (visibleCount > 0) {
+    updatePagination(visibleCount, normalizedCategory, CARDS_PER_PAGE);
   } else {
-    updatePagination(visibleCount, normalizedCategory);
+    pagination.style.display = "none";
   }
 
+  // Обновляем позицию футера
   if (footer) {
     footer.style.position = visibleCount > 0 ? "absolute" : "static";
   }
 }
 
 // Функция для обновления пагинации
-function updatePagination(totalVisible, category) {
+function updatePagination(totalVisible, category, cardsPerPage) {
   const pagination = document.querySelector(".pagination");
-  const cardsPerPage = 9;
   const pageCount = Math.ceil(totalVisible / cardsPerPage);
 
   // Очищаем пагинацию
   pagination.innerHTML = "";
 
-  // Создаем кнопки пагинации
-  for (let i = 1; i <= pageCount; i++) {
-    const btn = document.createElement("button");
-    btn.className = "pagination-btn";
-    btn.textContent = i;
-    btn.dataset.page = i;
+  // Создаем кнопки пагинации только если нужно больше одной страницы
+  if (pageCount > 1) {
+    for (let i = 1; i <= pageCount; i++) {
+      const btn = document.createElement("button");
+      btn.className = "pagination-btn";
+      btn.textContent = i;
+      btn.dataset.page = i;
 
-    btn.addEventListener("click", function () {
-      showPage(i, category);
-    });
+      btn.addEventListener("click", function () {
+        showPage(i, category, cardsPerPage);
+      });
 
-    pagination.appendChild(btn);
-  }
-
-  // Показываем первую страницу
-  if (pageCount > 0) {
-    showPage(1, category);
+      pagination.appendChild(btn);
+    }
     pagination.style.display = "flex";
+    showPage(1, category, cardsPerPage); // Показываем первую страницу
   } else {
+    // Если всего одна страница, скрываем пагинацию
     pagination.style.display = "none";
+    showAllVisible(category); // Показываем все карточки
   }
 }
 
-// Функция для отображения конкретной страницы
-function showPage(pageNumber, category) {
+// Показать все видимые карточки (для случаев с одной страницей)
+function showAllVisible(category) {
   const cards = document.querySelectorAll(".card");
-  const cardsPerPage = 9;
+  const normalizedCategory = category.toLowerCase();
+
+  cards.forEach((card) => {
+    const shouldShow =
+      normalizedCategory === "all" ||
+      card.classList.contains(normalizedCategory);
+    card.style.display = shouldShow ? "block" : "none";
+  });
+}
+
+// Функция для отображения конкретной страницы
+function showPage(pageNumber, category, cardsPerPage) {
+  const cards = document.querySelectorAll(".card");
   const startIndex = (pageNumber - 1) * cardsPerPage;
   const endIndex = startIndex + cardsPerPage;
-  let visibleInPage = 0;
+  let count = 0;
+  let visibleIndex = 0;
 
   // Сбрасываем активные кнопки
   document.querySelectorAll(".pagination-btn").forEach((btn) => {
@@ -88,31 +101,32 @@ function showPage(pageNumber, category) {
   if (activeBtn) activeBtn.classList.add("active");
 
   // Показываем карточки для текущей страницы
-  cards.forEach((card, index) => {
-    const shouldShow =
-      (category === "all" || card.classList.contains(category)) &&
-      index >= startIndex &&
-      index < endIndex;
+  cards.forEach((card) => {
+    const isVisible = category === "all" || card.classList.contains(category);
 
-    card.style.display = shouldShow ? "block" : "none";
-    if (shouldShow) visibleInPage++;
+    if (isVisible) {
+      if (visibleIndex >= startIndex && visibleIndex < endIndex) {
+        card.style.display = "block";
+        count++;
+      } else {
+        card.style.display = "none";
+      }
+      visibleIndex++;
+    } else {
+      card.style.display = "none";
+    }
   });
 
   // Обновляем футер
   const footer = document.querySelector("footer");
   if (footer) {
-    footer.style.position = visibleInPage > 0 ? "absolute" : "static";
+    footer.style.position = count > 0 ? "absolute" : "static";
   }
 }
 
 // Инициализация
 document.addEventListener("DOMContentLoaded", () => {
-  // Создаем контейнер для пагинации если его нет
-  if (!document.querySelector(".pagination")) {
-    const pagination = document.createElement("div");
-    pagination.className = "pagination";
-    document.querySelector(".cards_list").after(pagination);
-  }
+  const CARDS_PER_PAGE = 15; // Changed from 9 to 15
 
   // Обработчики категорий
   const categoryList = document.querySelector(".category_list");
@@ -126,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     item.classList.add("active");
 
-    const category = item.dataset.category || item.textContent;
+    const category = item.dataset.category || item.textContent.trim();
     filterCategory(category);
   });
 
@@ -134,6 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultItem = document.querySelector(".category_item");
   if (defaultItem) {
     defaultItem.classList.add("active");
-    filterCategory("All");
+    // Используем setTimeout чтобы гарантировать, что карточки уже отрендерены
+    setTimeout(() => filterCategory("All"), 100);
   }
 });
