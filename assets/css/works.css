@@ -554,8 +554,10 @@ main {
 .pagination {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 40px 0;
   gap: 10px;
+  padding: 0 10px;
 }
 
 .pagination-btn {
@@ -598,6 +600,18 @@ main {
 
 /* Extra small screens (very small phones) */
 @media (max-width: 480px) {
+  .pagination {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 10px;
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+  }
+
+  .pagination::-webkit-scrollbar {
+    display: none; /* hide scrollbar */
+  }
+
   .pagination-btn {
     padding: 4px 8px; /* smallest padding */
     font-size: 10px; /* smallest font size */
