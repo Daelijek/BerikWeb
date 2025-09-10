@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Инициализация элементов
   const languageSelector = document.getElementById("language-selector");
-  const languageSelectorMobile = document.getElementById(
-    "language-selector-mobile"
-  );
+  const languageSelectorMobile = document.getElementById("language-selector-mobile");
   const savedLang = localStorage.getItem("language") || "en";
   const hamburger = document.getElementById("hamburger");
   const sidebar = document.getElementById("mobileSidebar");
@@ -20,46 +18,46 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Применяем сохраненный язык
-  languageSelector.value = savedLang;
-  languageSelectorMobile.value = savedLang;
+  if (languageSelector) languageSelector.value = savedLang;
+  if (languageSelectorMobile) languageSelectorMobile.value = savedLang;
   updatePageLanguage(savedLang, true);
 
-  if (languageSelectorMobile) {
-    languageSelectorMobile.value = savedLang;
+  // Desktop language selector
+  if (languageSelector) {
+    languageSelector.addEventListener("change", function () {
+      const lang = this.value;
+      localStorage.setItem("language", lang);
+      if (languageSelectorMobile) languageSelectorMobile.value = lang;
+      updatePageLanguage(lang, false);
+    });
   }
 
-  // Desktop language selector
-  languageSelector.addEventListener("change", function () {
-    const lang = this.value;
-    localStorage.setItem("language", lang);
-    languageSelectorMobile.value = lang;
-    updatePageLanguage(lang, false);
-  });
-
   // Mobile language selector
-  languageSelectorMobile.addEventListener("change", function () {
-    const lang = this.value;
-    localStorage.setItem("language", lang);
-    languageSelector.value = lang;
-    updatePageLanguage(lang, false);
-  });
+  if (languageSelectorMobile) {
+    languageSelectorMobile.addEventListener("change", function () {
+      const lang = this.value;
+      localStorage.setItem("language", lang);
+      if (languageSelector) languageSelector.value = lang;
+      updatePageLanguage(lang, false);
+    });
+  }
 
   function updatePageLanguage(lang, isInitialLoad) {
-    // 1. Применяем настройки шрифта
+    // Применяем настройки шрифта
     applyFontSettings(lang);
 
-    // 2. Анимация (кроме первой загрузки)
+    // Анимация (кроме первой загрузки)
     if (!isInitialLoad) {
       startLanguageChangeAnimation();
     }
 
-    // 3. Обновляем основные тексты
+    // Обновляем основные тексты
     updateMainTexts(lang);
 
-    // 4. Обновляем карточки
+    // Обновляем карточки
     updateCardsContent(lang);
 
-    // 5. Завершаем анимацию
+    // Завершаем анимацию
     if (!isInitialLoad) {
       endLanguageChangeAnimation();
     }
@@ -67,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function applyFontSettings(lang) {
     const settings = translations[lang] || translations.en;
-    console.log("Applying font settings:", settings); // Добавьте лог
     document.body.style.fontFamily = settings.font_family;
     document.body.style.fontWeight = settings.font_weight;
     document.body.style.letterSpacing = settings.letter_spacing;
@@ -84,39 +81,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updateMainTexts(lang) {
-    // Элементы с data-i18n
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      el.innerHTML = translations.getTranslation(lang, key); // Используем innerHTML для обработки тегов <br>
+      el.innerHTML = translations.getTranslation(lang, key);
     });
-
-    // Специальные элементы
-    const elementsMap = {
-      ".title": "title",
-      ".title_label": "title_label",
-      ".description": "description",
-      ".works_title": "selected_works",
-      ".quote_title": "quote",
-      ".about_title": "about_title",
-      ".about_descr": "about_descr",
-      ".skills_first": "skills_first",
-      ".skills_second": "skills_second",
-    };
-
-    for (const [selector, key] of Object.entries(elementsMap)) {
-      const element = document.querySelector(selector);
-      if (element) {
-        if (selector === ".quote_title") {
-          // Используем innerHTML для элемента с картинкой
-          element.innerHTML = `<img src="assets/images/quote.png" alt=""> ${translations.getTranslation(
-            lang,
-            key
-          )}`;
-        } else {
-          element.innerHTML = translations.getTranslation(lang, key); // Используем innerHTML для обработки тегов <br>
-        }
-      }
-    }
   }
 
   function updateCardsContent(lang) {

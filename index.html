@@ -1,379 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Официальный сайт Берика Жунусбека - художника, аниматора, скульптора. Работы в области акварели, графики, 3D-графики и анимации."
-    />
-    <meta
-      name="keywords"
-      content="Берик Жунусбек, Berik Zhunusbek, художник, аниматор, скульптор, акварель, графика, 3D-графика, анимация, Казахстан"
-    />
-    <meta name="author" content="Berik Zhunusbek" />
-    <meta property="og:title" content="Берик Жунусбек - Официальный сайт" />
-    <meta
-      property="og:description"
-      content="Официальный сайт Берика Жунусбека, художника, аниматора, скульптора. Эксплорация творчества и творческих проектов."
-    />
-    <meta property="og:image" content="url_to_image.jpg" />
-    <meta property="og:url" content="https://yourwebsite.com" />
-    <meta name="robots" content="index, follow" />
-    <meta http-equiv="Content-Language" content="ru, en" />
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-    <link rel="canonical" href="https://yourwebsite.com" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Berik Zhunusbek - Берик Жунусбек</title>
-  </head>
 
-  <body>
-    <header>
-      <div class="nav">
-        <!-- Logo -->
-        <div class="nav_logo">
-          <a href="index.html">Berik Zhunusbek</a>
-        </div>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Официальный сайт Берика Жунусбека - художника, аниматора, скульптора. Работы в области акварели, графики, 3D-графики и анимации." />
+  <meta name="keywords"
+    content="Берик Жунусбек, Berik Zhunusbek, художник, аниматор, скульптор, акварель, графика, 3D-графика, анимация, Казахстан" />
+  <meta name="author" content="Berik Zhunusbek" />
+  <meta property="og:title" content="Берик Жунусбек - Официальный сайт" />
+  <meta property="og:description"
+    content="Официальный сайт Берика Жунусбека, художника, аниматора, скульптора. Эксплорация творчества и творческих проектов." />
+  <meta property="og:image" content="url_to_image.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta name="robots" content="index, follow" />
+  <meta http-equiv="Content-Language" content="ru, en" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://yourwebsite.com" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Berik Zhunusbek - Берик Жунусбек</title>
+</head>
 
-        <!-- Hamburger Button (visible on mobile) -->
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-        <!-- Desktop Navigation -->
-        <nav class="nav_navbar" id="navbar">
-          <ul class="navbar_list">
-            <li class="navbar_item">
-              <a href="pages/aboutMe.html" data-i18n="about">About me</a>
-            </li>
-            <li class="navbar_item">
-              <a href="pages/works.html" data-i18n="works">Works</a>
-            </li>
-            <li class="navbar_item language_wrapper">
-              <div class="language_select_wrapper">
-                <select id="language-selector">
-                  <option value="en">EN</option>
-                  <option value="ru">RU</option>
-                  <option value="kz">KZ</option>
-                </select>
-              </div>
-            </li>
-          </ul>
-        </nav>
+<body>
+  <header>
+    <div class="nav">
+      <!-- Logo -->
+      <div class="nav_logo">
+        <a href="index.html">Berik Zhunusbek</a>
       </div>
 
-      <!-- Mobile Sidebar -->
-      <aside class="mobile_sidebar" id="mobileSidebar">
-        <ul class="mobile_nav_list">
-          <li>
+      <!-- Hamburger Button (visible on mobile) -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav_navbar" id="navbar">
+        <ul class="navbar_list">
+          <li class="navbar_item">
             <a href="pages/aboutMe.html" data-i18n="about">About me</a>
           </li>
-          <li>
+          <li class="navbar_item">
             <a href="pages/works.html" data-i18n="works">Works</a>
           </li>
-          <li>
-            <select id="language-selector-mobile">
-              <option value="en">EN</option>
-              <option value="ru">RU</option>
-              <option value="kz">KZ</option>
-            </select>
+          <li class="navbar_item language_wrapper">
+            <div class="language_select_wrapper">
+              <select id="language-selector">
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+                <option value="kz">KZ</option>
+              </select>
+            </div>
           </li>
         </ul>
-      </aside>
-    </header>
+      </nav>
+    </div>
 
-    <main>
-      <div class="main">
-        <div class="title">Berik Zhunusbek</div>
-        <div class="title_label">
-          Sculptor • Animator • Director of Computer Graphics • Photographer •
-          Actor
-        </div>
-        <div class="description">
-          Creating at the intersection of traditional sculpture and digital art.
-          Exploring the boundaries between physical and virtual spaces through
-          immersive experiences and dynamic forms.
-        </div>
+    <!-- Mobile Sidebar -->
+    <aside class="mobile_sidebar" id="mobileSidebar">
+      <ul class="mobile_nav_list">
+        <li>
+          <a href="pages/aboutMe.html" data-i18n="about">About me</a>
+        </li>
+        <li>
+          <a href="pages/works.html" data-i18n="works">Works</a>
+        </li>
+        <li>
+          <select id="language-selector-mobile">
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+            <option value="kz">KZ</option>
+          </select>
+        </li>
+      </ul>
+    </aside>
+  </header>
+
+  <main>
+    <div class="main">
+      <div class="title">Berik Zhunusbek</div>
+      <div class="title_label">
+        Sculptor • Animator • Director of Computer Graphics • Photographer •
+        Actor
       </div>
-
-      <div class="works">
-        <div class="works_title">Recent Works</div>
-        <div class="cards_list">
-          <div class="card sculpture">
-            <a href="pages/detailedInfo/Sculpture/mother.html">
-              <img
-                src="assets/images/sculptures/mother/DSC_0948.jpg"
-                alt="Mother sculpture"
-              />
-            </a>
-            <div
-              class="card_title"
-              data-i18n-en="Mother"
-              data-i18n-ru="Мать"
-              data-i18n-kz="Ана"
-            >
-              Mother
-            </div>
-            <div
-              class="card_description"
-              data-i18n-en="Sculpture"
-              data-i18n-ru="Скульптура"
-              data-i18n-kz="Мүсін"
-            >
-              Sculpture
-            </div>
-          </div>
-
-          <div class="card sculpture">
-            <a href="pages/detailedInfo/Sculpture/doda.html">
-              <img
-                src="assets/images/sculptures/Doda/DSC_0886.jpg"
-                alt="Doda sculpture"
-              />
-            </a>
-            <div
-              class="card_title"
-              data-i18n-en="Doda"
-              data-i18n-ru="Дода"
-              data-i18n-kz="Дода"
-            >
-              Doda
-            </div>
-            <div
-              class="card_description"
-              data-i18n-en="Sculpture"
-              data-i18n-ru="Скульптура"
-              data-i18n-kz="Мүсін"
-            >
-              Sculpture
-            </div>
-          </div>
-
-          <div class="card sculpture">
-            <img
-              src="assets/images/sculptures/Jantalas/DSC_0905.jpg"
-              alt="The mess sculpture"
-            />
-            <div
-              class="card_title"
-              data-i18n-en="The mess"
-              data-i18n-ru="Жанталас"
-              data-i18n-kz="Жанталас"
-            >
-              The mess
-            </div>
-            <div
-              class="card_description"
-              data-i18n-en="Sculpture"
-              data-i18n-ru="Скульптура"
-              data-i18n-kz="Мүсін"
-            >
-              Sculpture
-            </div>
-          </div>
-
-          <div class="card sculpture">
-            <img
-              src="assets/images/sculptures/balapan/DSC_5989.jpg"
-              alt="Balapan sculpture"
-            />
-            <div
-              class="card_title"
-              data-i18n-en="Balapan"
-              data-i18n-ru="Балапан"
-              data-i18n-kz="Балапан"
-            >
-              Balapan
-            </div>
-            <div
-              class="card_description"
-              data-i18n-en="Sculpture"
-              data-i18n-ru="Скульптура"
-              data-i18n-kz="Мүсін"
-            >
-              Drawing
-            </div>
-          </div>
-
-          <div class="card drawing">
-            <img
-              src="assets/images/drawing/lazzat/Лаззат.jpg"
-              alt="Lazzat drawing"
-            />
-            <div
-              class="card_title"
-              data-i18n-en="Lazzat"
-              data-i18n-ru="Ляззат"
-              data-i18n-kz="Ләззат"
-            >
-              Lazzat
-            </div>
-            <div
-              class="card_description"
-              data-i18n-en="Drawing"
-              data-i18n-ru="Рисунок"
-              data-i18n-kz="Сурет"
-            >
-              Drawing
-            </div>
-          </div>
-
-          <div class="card covers">
-            <img
-              src="assets/images/cover/steppeExpress/Плакат Степной экспресс01.jpg"
-              alt="Steppe express cover"
-            />
-            <div
-              class="card_title"
-              data-i18n-en="Steppe express"
-              data-i18n-ru="Степной экспресс"
-              data-i18n-kz="Степной экспресс"
-            >
-              Steppe express
-            </div>
-            <div
-              class="card_description"
-              data-i18n-en="Covers"
-              data-i18n-ru="Обложки"
-              data-i18n-kz="Мақалалар"
-            >
-              Covers
-            </div>
-          </div>
-
-          <div class="card sculpture">
-            <img
-              src="assets/images/sculptures/gaukhartas/DSC_0952.jpg"
-              alt="Gaukhartas sculpture"
-            />
-            <div
-              class="card_title"
-              data-i18n-en="Gaukhartas"
-              data-i18n-ru="Гаухартас"
-              data-i18n-kz="Гаухартас"
-            >
-              Gaukhartas
-            </div>
-            <div
-              class="card_description"
-              data-i18n-en="Sculpture"
-              data-i18n-ru="Скульптура"
-              data-i18n-kz="Мүсін"
-            >
-              Drawing
-            </div>
-          </div>
-
-          <div class="card sculpture">
-            <img
-              src="assets/images/sculptures/deer/DSC_5463.jpg"
-              alt="Deer sculpture"
-            />
-            <div
-              class="card_title"
-              data-i18n-en="Deer"
-              data-i18n-ru="Сайгак"
-              data-i18n-kz="Киік"
-            >
-              Deer
-            </div>
-            <div
-              class="card_description"
-              data-i18n-en="Sculpture"
-              data-i18n-ru="Скульптура"
-              data-i18n-kz="Мүсін"
-            >
-              Drawing
-            </div>
-          </div>
-        </div>
+      <div class="description">
+        Creating at the intersection of traditional sculpture and digital art.
+        Exploring the boundaries between physical and virtual spaces through
+        immersive experiences and dynamic forms.
       </div>
+    </div>
 
-      <div class="quote">
-        <div class="quote_inner">
-          <div class="quote_author">— Berik Zhunusbek</div>
-          <div class="quote_title">
-            <img src="assets/images/quote.png" alt="" />
-            Everyone should do what they can.
-          </div>
-        </div>
-      </div>
-
-      <div class="about">
-        <div class="about_inner">
-          <div class="about_info">
-            <div class="about_title">ABOUT</div>
-            <div class="about_descr">
-              As a multidisciplinary digital artist, I explore the intersection
-              of sculpture, animation, and computer-generated imagery. My work
-              seeks to bridge the gap between traditional artistic practices and
-              cutting-edge technology, creating immersive experiences that
-              challenge perception and reality.
-            </div>
-            <div class="about_skills">
-              <div class="skills_first">
-                3D Modeling <br /><br />
-                Sculptor <br /><br />
-                Concept Art <br /><br />
-                Virtual Reality
-              </div>
-              <div class="skills_second">
-                Digital Sculpture <br /><br />
-                Character Animation <br /><br />
-                Visual Effects <br /><br />
-                Interactive Design
-              </div>
-            </div>
-          </div>
-          <div class="about_img">
-            <img src="assets/images/about2.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="footer">
-        <div class="footer_inner">
-          <div class="nav_logo"><a href="index.html">Berik Zhunusbek</a></div>
-          <div class="footer_contacts">
-            <a href="tel:+77761466000">+7 776 146 6000</a><br />
-          </div>
-        </div>
-        <div class="social_media">
-          <a
-            target="_blank"
-            href="https://www.youtube.com/@Junusbek1962/videos"
-          >
-            <img src="assets/images/youtube.png" alt="" />
+    <div class="works">
+      <div class="works_title">Recent Works</div>
+      <div class="cards_list">
+        <div class="card sculpture">
+          <a href="pages/detailedInfo/Sculpture/mother.html">
+            <img src="assets/images/sculptures/mother/DSC_0948.jpg" alt="Mother sculpture" />
           </a>
-          <a
-            target="_blank"
-            href="https://web.facebook.com/BerikZhunusbek/?_rdc=1&_rdr"
-            ><img src="assets/images/facebook (1).png" alt=""
-          /></a>
-          <a target="_blank" href="https://www.tiktok.com/@berikzhunysbek"
-            ><img src="assets/images/tik-tok.png" alt=""
-          /></a>
-          <a target="_blank" href=""
-            ><img src="assets/images/mail.png" alt=""
-          /></a>
+          <div class="card_title" data-i18n-en="Mother" data-i18n-ru="Мать" data-i18n-kz="Ана">
+            Mother
+          </div>
+          <div class="card_description" data-i18n-en="Sculpture" data-i18n-ru="Скульптура" data-i18n-kz="Мүсін">
+            Sculpture
+          </div>
         </div>
-        <div class="rights" data-i18n="rights">
-          © 2024 Berik Zhunusbek. All rights reserved.
+
+        <div class="card sculpture">
+          <a href="pages/detailedInfo/Sculpture/doda.html">
+            <img src="assets/images/sculptures/Doda/DSC_0886.jpg" alt="Doda sculpture" />
+          </a>
+          <div class="card_title" data-i18n-en="Doda" data-i18n-ru="Дода" data-i18n-kz="Дода">
+            Doda
+          </div>
+          <div class="card_description" data-i18n-en="Sculpture" data-i18n-ru="Скульптура" data-i18n-kz="Мүсін">
+            Sculpture
+          </div>
+        </div>
+
+        <div class="card sculpture">
+          <img src="assets/images/sculptures/Jantalas/DSC_0905.jpg" alt="The mess sculpture" />
+          <div class="card_title" data-i18n-en="The mess" data-i18n-ru="Жанталас" data-i18n-kz="Жанталас">
+            The mess
+          </div>
+          <div class="card_description" data-i18n-en="Sculpture" data-i18n-ru="Скульптура" data-i18n-kz="Мүсін">
+            Sculpture
+          </div>
+        </div>
+
+        <div class="card sculpture">
+          <img src="assets/images/sculptures/balapan/DSC_5989.jpg" alt="Balapan sculpture" />
+          <div class="card_title" data-i18n-en="Balapan" data-i18n-ru="Цыпленок" data-i18n-kz="Балапан">
+            Balapan
+          </div>
+          <div class="card_description" data-i18n-en="Sculpture" data-i18n-ru="Скульптура" data-i18n-kz="Мүсін">
+            Drawing
+          </div>
+        </div>
+
+        <div class="card drawing">
+          <img src="assets/images/drawing/lazzat/Лаззат.jpg" alt="Lazzat drawing" />
+          <div class="card_title" data-i18n-en="Lazzat" data-i18n-ru="Ляззат" data-i18n-kz="Ләззат">
+            Lazzat
+          </div>
+          <div class="card_description" data-i18n-en="Drawing" data-i18n-ru="Рисунок" data-i18n-kz="Сурет">
+            Drawing
+          </div>
+        </div>
+
+        <div class="card covers">
+          <img src="assets/images/cover/steppeExpress/Плакат Степной экспресс01.jpg" alt="Steppe express cover" />
+          <div class="card_title" data-i18n-en="Steppe express" data-i18n-ru="Степной экспресс"
+            data-i18n-kz="Дала экспрессі">
+            Steppe express
+          </div>
+          <div class="card_description" data-i18n-en="Covers" data-i18n-ru="Обложки" data-i18n-kz="Мақалалар">
+            Covers
+          </div>
+        </div>
+
+        <div class="card sculpture">
+          <img src="assets/images/sculptures/gaukhartas/DSC_0952.jpg" alt="Gaukhartas sculpture" />
+          <div class="card_title" data-i18n-en="Gaukhartas" data-i18n-ru="Гаухартас" data-i18n-kz="Гаухартас">
+            Gaukhartas
+          </div>
+          <div class="card_description" data-i18n-en="Sculpture" data-i18n-ru="Скульптура" data-i18n-kz="Мүсін">
+            Drawing
+          </div>
+        </div>
+
+        <div class="card sculpture">
+          <img src="assets/images/sculptures/deer/DSC_5463.jpg" alt="Deer sculpture" />
+          <div class="card_title" data-i18n-en="Deer" data-i18n-ru="Сайгак" data-i18n-kz="Киік">
+            Deer
+          </div>
+          <div class="card_description" data-i18n-en="Sculpture" data-i18n-ru="Скульптура" data-i18n-kz="Мүсін">
+            Drawing
+          </div>
         </div>
       </div>
-    </footer>
-    <script src="assets/js/translationMain.js"></script>
-    <script src="assets/js/languageSwitcher.js"></script>
-  </body>
+    </div>
+
+    <div class="quote">
+      <div class="quote_inner">
+        <div class="quote_author">— Berik Zhunusbek</div>
+        <div class="quote_title">
+          <img src="assets/images/quote.png" alt="" />
+          Everyone should do what they can.
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about_inner">
+        <div class="about_info">
+          <div class="about_title">ABOUT</div>
+          <div class="about_descr">
+            As a multidisciplinary digital artist, I explore the intersection
+            of sculpture, animation, and computer-generated imagery. My work
+            seeks to bridge the gap between traditional artistic practices and
+            cutting-edge technology, creating immersive experiences that
+            challenge perception and reality.
+          </div>
+          <div class="about_skills">
+            <div class="skills_first">
+              3D Modeling <br /><br />
+              Sculptor <br /><br />
+              Concept Art <br /><br />
+              Virtual Reality
+            </div>
+            <div class="skills_second">
+              Digital Sculpture <br /><br />
+              Character Animation <br /><br />
+              Visual Effects <br /><br />
+              Interactive Design
+            </div>
+          </div>
+        </div>
+        <div class="about_img">
+          <img src="assets/images/about2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer_inner">
+        <div class="nav_logo"><a href="index.html">Berik Zhunusbek</a></div>
+        <div class="footer_contacts">
+          <a href="tel:+77761466000">+7 776 146 6000</a><br />
+        </div>
+      </div>
+      <div class="social_media">
+        <a target="_blank" href="https://www.youtube.com/@Junusbek1962/videos">
+          <img src="assets/images/youtube.png" alt="" />
+        </a>
+        <a target="_blank" href="https://web.facebook.com/BerikZhunusbek/?_rdc=1&_rdr"><img
+            src="assets/images/facebook (1).png" alt="" /></a>
+        <a target="_blank" href="https://www.tiktok.com/@berikzhunysbek"><img src="assets/images/tik-tok.png"
+            alt="" /></a>
+        <a target="_blank" href=""><img src="assets/images/mail.png" alt="" /></a>
+      </div>
+      <div class="rights" data-i18n="rights">
+        © 2024 Berik Zhunusbek. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/translationMain.js"></script>
+  <script src="assets/js/languageSwitcher.js"></script>
+</body>
+
 </html>

@@ -245,16 +245,13 @@ header {
 main {
   color: #fff;
   background-color: #000;
-  font-family: "Space Grotesk";
 }
 
 /* Desktop Styles (No changes to your original code) */
 .full-width-background {
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 1) 100%
-    ),
+      rgba(0, 0, 0, 1) 100%),
     url("../images/016.jpg");
   background-size: cover;
   background-position: center;
@@ -288,66 +285,87 @@ main {
 /* For tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
   .full-width-background {
-    padding: 300px 0 50px 0; /* Adjust padding for tablets */
+    padding: 300px 0 50px 0;
+    /* Adjust padding for tablets */
   }
 
   .main_inner {
-    max-width: 80%; /* Increase width for tablets */
-    margin: 0 auto; /* Ensure centering */
+    max-width: 80%;
+    /* Increase width for tablets */
+    margin: 0 auto;
+    /* Ensure centering */
   }
 
   .first_title {
-    font-size: 45px; /* Reduce font size for title on tablets */
-    text-align: center; /* Align title to the center */
+    font-size: 45px;
+    /* Reduce font size for title on tablets */
+    text-align: center;
+    /* Align title to the center */
   }
 
   .first_skills {
-    font-size: 20px; /* Reduce font size for skills on tablets */
-    text-align: center; /* Align skills to the center */
+    font-size: 20px;
+    /* Reduce font size for skills on tablets */
+    text-align: center;
+    /* Align skills to the center */
   }
 }
 
 /* For phones (max-width: 768px) */
 @media (max-width: 768px) {
   .full-width-background {
-    padding: 200px 0 40px 0; /* Adjust padding for phones */
+    padding: 200px 0 40px 0;
+    /* Adjust padding for phones */
   }
 
   .main_inner {
-    max-width: 90%; /* Use 90% width for phones */
-    margin: 0 auto; /* Ensure centering */
+    max-width: 90%;
+    /* Use 90% width for phones */
+    margin: 0 auto;
+    /* Ensure centering */
   }
 
   .first_title {
-    font-size: 36px; /* Further reduce title size for phones */
-    text-align: center; /* Align title to the center */
+    font-size: 36px;
+    /* Further reduce title size for phones */
+    text-align: center;
+    /* Align title to the center */
   }
 
   .first_skills {
-    font-size: 18px; /* Further reduce skills font size */
-    text-align: center; /* Align skills to the center */
+    font-size: 18px;
+    /* Further reduce skills font size */
+    text-align: center;
+    /* Align skills to the center */
   }
 }
 
 /* For very small phones (max-width: 480px) */
 @media (max-width: 480px) {
   .full-width-background {
-    padding: 150px 0 30px 0; /* Further reduce padding for very small phones */
+    padding: 150px 0 30px 0;
+    /* Further reduce padding for very small phones */
   }
 
   .main_inner {
-    max-width: 100%; /* Full width for very small phones */
-    margin: 0 auto; /* Ensure centering */
+    max-width: 100%;
+    /* Full width for very small phones */
+    margin: 0 auto;
+    /* Ensure centering */
   }
 
   .first_title {
-    font-size: 28px; /* Reduce title size for small screens */
-    text-align: center; /* Align title to the center */
+    font-size: 28px;
+    /* Reduce title size for small screens */
+    text-align: center;
+    /* Align title to the center */
   }
 
   .first_skills {
-    font-size: 16px; /* Reduce skills font size for small screens */
-    text-align: center; /* Align skills to the center */
+    font-size: 16px;
+    /* Reduce skills font size for small screens */
+    text-align: center;
+    /* Align skills to the center */
   }
 }
 
@@ -470,6 +488,7 @@ b {
 }
 
 @media (max-width: 768px) {
+
   .text,
   .second_img {
     width: 90%;
@@ -597,17 +616,22 @@ b {
   }
 
   .fourth_info {
-    flex-direction: column; /* Размещаем элементы вертикально */
-    gap: 20px; /* Уменьшаем отступы между элементами */
+    flex-direction: column;
+    /* Размещаем элементы вертикально */
+    gap: 20px;
+    /* Уменьшаем отступы между элементами */
   }
 
   .fourth_img {
-    width: 60%; /* Изображение станет меньше */
+    width: 60%;
+    /* Изображение станет меньше */
   }
 
   .fourth_img img {
-    width: 100%; /* Изображение на всю ширину контейнера */
-    object-fit: contain; /* Сохраняем пропорции изображения */
+    width: 100%;
+    /* Изображение на всю ширину контейнера */
+    object-fit: contain;
+    /* Сохраняем пропорции изображения */
   }
 }
 
@@ -619,16 +643,19 @@ b {
   }
 
   .fourth_info {
-    flex-direction: column; /* Размещаем элементы вертикально */
+    flex-direction: column;
+    /* Размещаем элементы вертикально */
     gap: 20px;
   }
 
   .fourth_img {
-    width: 80%; /* Изображение шире */
+    width: 80%;
+    /* Изображение шире */
   }
 
   .fourth_img img {
-    width: 100%; /* Изображение будет занимать всю ширину */
+    width: 100%;
+    /* Изображение будет занимать всю ширину */
     object-fit: contain;
   }
 }
@@ -641,18 +668,24 @@ b {
   }
 
   .fourth_info {
-    flex-direction: column; /* Элементы размещаются вертикально */
-    gap: 15px; /* Отступы между элементами уменьшаются */
+    flex-direction: column;
+    /* Элементы размещаются вертикально */
+    gap: 15px;
+    /* Отступы между элементами уменьшаются */
   }
 
   .fourth_img {
-    width: 100%; /* Изображение будет на всю ширину */
-    margin-top: 15px; /* Добавляем отступ сверху */
+    width: 100%;
+    /* Изображение будет на всю ширину */
+    margin-top: 15px;
+    /* Добавляем отступ сверху */
   }
 
   .fourth_img img {
-    width: 100%; /* Изображение на всю ширину */
-    object-fit: contain; /* Сохраняем пропорции изображения */
+    width: 100%;
+    /* Изображение на всю ширину */
+    object-fit: contain;
+    /* Сохраняем пропорции изображения */
   }
 }
 
@@ -705,20 +738,25 @@ b {
   }
 
   .five_text {
-    font-size: 19px; /* Уменьшаем размер шрифта текста */
+    font-size: 19px;
+    /* Уменьшаем размер шрифта текста */
   }
 
   .five_info {
-    flex-direction: column; /* Элементы размещаем вертикально */
-    gap: 20px; /* Уменьшаем отступы между элементами */
+    flex-direction: column;
+    /* Элементы размещаем вертикально */
+    gap: 20px;
+    /* Уменьшаем отступы между элементами */
   }
 
   .five_img {
-    gap: 20px; /* Уменьшаем отступы между картинками */
+    gap: 20px;
+    /* Уменьшаем отступы между картинками */
   }
 
   .five_img img {
-    width: calc((100% - 60px) / 3); /* 3 картинки и 2 промежутка по 20px */
+    width: calc((100% - 60px) / 3);
+    /* 3 картинки и 2 промежутка по 20px */
     object-fit: cover;
     aspect-ratio: 4 / 3;
   }
@@ -732,20 +770,24 @@ b {
   }
 
   .five_text {
-    font-size: 17px; /* Уменьшаем размер шрифта */
+    font-size: 17px;
+    /* Уменьшаем размер шрифта */
   }
 
   .five_info {
-    flex-direction: column; /* Элементы размещаем вертикально */
+    flex-direction: column;
+    /* Элементы размещаем вертикально */
     gap: 20px;
   }
 
   .five_img {
-    gap: 15px; /* Меньше отступы между картинками */
+    gap: 15px;
+    /* Меньше отступы между картинками */
   }
 
   .five_img img {
-    width: calc((100% - 45px) / 2); /* 2 картинки и 1 промежуток по 15px */
+    width: calc((100% - 45px) / 2);
+    /* 2 картинки и 1 промежуток по 15px */
     object-fit: cover;
     aspect-ratio: 4 / 3;
   }
@@ -759,20 +801,25 @@ b {
   }
 
   .five_text {
-    font-size: 15px; /* Уменьшаем размер шрифта */
+    font-size: 15px;
+    /* Уменьшаем размер шрифта */
   }
 
   .five_info {
-    flex-direction: column; /* Элементы размещаем вертикально */
-    gap: 15px; /* Уменьшаем отступы */
+    flex-direction: column;
+    /* Элементы размещаем вертикально */
+    gap: 15px;
+    /* Уменьшаем отступы */
   }
 
   .five_img {
-    gap: 10px; /* Отступы между картинками */
+    gap: 10px;
+    /* Отступы между картинками */
   }
 
   .five_img img {
-    width: 100%; /* Каждое изображение будет занимать всю ширину */
+    width: 100%;
+    /* Каждое изображение будет занимать всю ширину */
     object-fit: cover;
     aspect-ratio: 4 / 3;
   }
@@ -808,19 +855,16 @@ b {
 }
 
 .quote {
-  background: linear-gradient(
-    40deg,
-    #1a56db 0%,
-    #0c2969 0%,
-    #05102a 0%,
-    #000 50%,
-    #05102a 100%,
-    #0c2969 100%,
-    #1a56db 100%
-  );
+  background: linear-gradient(40deg,
+      #1a56db 0%,
+      #0c2969 0%,
+      #05102a 0%,
+      #000 50%,
+      #05102a 100%,
+      #0c2969 100%,
+      #1a56db 100%);
   padding: 100px 0;
   color: #fff;
-  font-family: "Space Grotesk";
   position: relative;
 }
 
@@ -922,36 +966,45 @@ b {
 /* Медиазапросы для планшетов (максимальная ширина 1024px) */
 @media (max-width: 1024px) {
   .seven_info {
-    flex-direction: column; /* Элементы размещаем вертикально */
-    gap: 20px; /* Уменьшаем отступы между элементами */
+    flex-direction: column;
+    /* Элементы размещаем вертикально */
+    gap: 20px;
+    /* Уменьшаем отступы между элементами */
   }
 
   .seven_text {
-    font-size: 19px; /* Уменьшаем размер шрифта текста */
+    font-size: 19px;
+    /* Уменьшаем размер шрифта текста */
   }
 }
 
 /* Медиазапросы для мобильных устройств (максимальная ширина 768px) */
 @media (max-width: 768px) {
   .seven_info {
-    flex-direction: column; /* Элементы размещаем вертикально */
-    gap: 15px; /* Уменьшаем отступы между элементами */
+    flex-direction: column;
+    /* Элементы размещаем вертикально */
+    gap: 15px;
+    /* Уменьшаем отступы между элементами */
   }
 
   .seven_text {
-    font-size: 17px; /* Уменьшаем размер шрифта */
+    font-size: 17px;
+    /* Уменьшаем размер шрифта */
   }
 }
 
 /* Медиазапросы для мобильных устройств (максимальная ширина 480px) */
 @media (max-width: 480px) {
   .seven_info {
-    flex-direction: column; /* Элементы размещаем вертикально */
-    gap: 10px; /* Уменьшаем отступы между элементами */
+    flex-direction: column;
+    /* Элементы размещаем вертикально */
+    gap: 10px;
+    /* Уменьшаем отступы между элементами */
   }
 
   .seven_text {
-    font-size: 15px; /* Уменьшаем размер шрифта */
+    font-size: 15px;
+    /* Уменьшаем размер шрифта */
   }
 }
 
