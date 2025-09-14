@@ -42,12 +42,13 @@ const artworks = [
       kz: "Мүсін",
     },
     type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/mess.html"
   },
   {
     image: "../assets/images/sculptures/balapan/DSC_5989.jpg",
     title: {
       en: "Balapan",
-      ru: "Балапан",
+      ru: "Цыпленок",
       kz: "Балапан",
     },
     category: {
@@ -56,6 +57,7 @@ const artworks = [
       kz: "Мүсін",
     },
     type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/balapan.html"
   },
   {
     image: "../assets/images/sculptures/gaukhartas/DSC_0952.jpg",
@@ -70,6 +72,7 @@ const artworks = [
       kz: "Мүсін",
     },
     type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/gaukhartas.html"
   },
   {
     image: "../assets/images/drawing/driver/Водитель.jpg",
