@@ -75,6 +75,21 @@ const artworks = [
     link: "../pages/detailedInfo/Sculpture/gaukhartas.html"
   },
   {
+    image: "../assets/images/sculptures/deer/DSC_5463.jpg",
+    title: {
+      en: "Deer",
+      ru: "Сайгак",
+      kz: "Киік",
+    },
+    category: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/deer.html",
+  },
+  {
     image: "../assets/images/drawing/driver/Водитель.jpg",
     title: {
       en: "Driver",
@@ -115,20 +130,6 @@ const artworks = [
       kz: "Графика",
     },
     type: "graphics",
-  },
-  {
-    image: "../assets/images/sculptures/deer/DSC_5463.jpg",
-    title: {
-      en: "Deer",
-      ru: "Сайгак",
-      kz: "Киік",
-    },
-    category: {
-      en: "Sculpture",
-      ru: "Скульптура",
-      kz: "Мүсін",
-    },
-    type: "sculpture",
   },
   {
     image: "../assets/images/graphics/0000001.jpg",

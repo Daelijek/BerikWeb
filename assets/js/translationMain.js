@@ -25,6 +25,12 @@ const translations = {
     font_family: "'Space Grotesk', sans-serif",
     font_weight: "400",
     letter_spacing: "normal",
+
+    all: 'All',
+    sculpture: 'Sculpture',
+    drawing: 'Drawing',
+    graphics: 'Graphics',
+    photos: 'Photos',
   },
   ru: {
     about: "Обо мне",
@@ -47,6 +53,12 @@ const translations = {
     font_family: "'Manrope', sans-serif",
     font_weight: "500",
     letter_spacing: "-0.01em",
+
+    all: 'Все',
+    sculpture: 'Скульптура',
+    drawing: 'Рисунок',
+    graphics: 'Графика',
+    photos: 'Фотографии',
   },
   kz: {
     about: "Мен туралы",
@@ -69,6 +81,12 @@ const translations = {
     font_family: "'Manrope', sans-serif",
     font_weight: "500",
     letter_spacing: "-0.01em",
+
+    all: 'Барлығы',
+    sculpture: 'Мүсін',
+    drawing: 'Сурет',
+    graphics: 'Графика',
+    photos: 'Фотосуреттер',
   },
 
   // Методы для работы с переводами
