@@ -3,17 +3,17 @@ const translations = {
         about: "About me",
         works: "Works",
         page_title: "Berik Zhunusbek",
-        rights: "© 2024 Berik Zhunusbek. All rights reserved.",
+        rights: "© 2025 Berik Zhunusbek. All rights reserved.",
         first_skills: "Sculptor • Animator • Director of Computer Graphics • Photographer • Actor",
         first_title: "Berik Zhunusbek",
         second_title: "The Artist of Many Faces",
         second_label: "Sculptor • Animator • Director of Computer Graphics • Photographer • Actor",
 
-        intro_text: "There are few figures in Kazakhstan's artistic and cinematic history who can embody the essence of creative polymathy as fully as Zhunusbek Berik. His life and work span across mediums and decades, drawing connections between tradition and technology, folklore and futurism, the deeply personal and the widely historical. Every work — whether drawn, sculpted, animated, or acted — becomes a thread in a much larger cultural tapestry.",
+        intro_text: "There are few figures in Kazakhstan's artistic and cinematic history who can embody the essence of creative polymathy as fully as Berik Zhunusbek. His life and work span across mediums and decades, drawing connections between tradition and technology, folklore and futurism, the deeply personal and the widely historical. Every work — whether drawn, sculpted, animated, or acted — becomes a thread in a much larger cultural tapestry.",
 
         early_years_title: "Early Years and Education (1982–1994)",
         early_years_text_first: "In the early 1980s, Berik Zhunusbek began his journey at the legendary Shaken Aimanov Kazakhfilm Studio. He immersed himself in the meticulous craft of animation, starting as a paint artist and cleanup artist before becoming a key animator. These foundational years honed not only his drawing skills but also instilled a deep sense of cinematic rhythm and visual storytelling.",
-        early_years_text_second: " By the early 1990s, Berik had already made significant contributions to celebrated Kazakh animated films such as Dacha Koketaya, Qanbak Shal, The Acorn and the Violin, and Kotyr Torgay. These films would go on to receive multiple prestigious awards, establishing him as a central figure in the Kazakh animation scene.",
+        early_years_text_second: "By the early 1990s, Berik had already made significant contributions to celebrated Kazakh animated films such as Dacha Koketaya, Qanbak Shal, The Acorn and the Violin, and Kotyr Torgay. These films would go on to receive multiple prestigious awards, establishing him as a central figure in the Kazakh animation scene.",
         early_years_text_third: "In 1994, he held his first solo exhibition at the House of Cinema. The show featured watercolors, sculpture, and sketches for animated and live-action films—offering a rare glimpse into his multifaceted creative universe.",
 
         cinema_title: "Crossing into Cinema and Design (1994–2000)",
@@ -49,13 +49,13 @@ const translations = {
         about: "Обо мне",
         works: "Работы",
         title: "Берик Жунусбек",
-        rights: "© 2024 Берик Жунусбек. Все права защищены.",
+        rights: "© 2025 Берик Жунусбек. Все права защищены.",
         first_skills: "Скульптор • Аниматор • Режиссёр компьютерной графики • Фотограф • Актёр",
         first_title: "Берик Жунусбек",
         second_title: "Художник многих граней",
         second_label: "Скульптор • Аниматор • Режиссёр компьютерной графики • Фотограф • Актёр",
 
-        intro_text: "В истории искусства и кино Казахстана мало фигур, которые воплощали бы суть творческого универсализма так полно, как Жунусбек Берик. Его жизнь и работа охватывают десятилетия и разные медиумы, соединяя традиции и технологии, фольклор и футуризм, личное и историческое. Каждая работа — нарисованная, вылепленная, анимированная или сыгранная — становится нитью в большом культурном полотне.",
+        intro_text: "В истории искусства и кино Казахстана мало фигур, которые воплощали бы суть творческого универсализма так полно, как Берик Жунусбек. Его жизнь и работа охватывают десятилетия и разные медиумы, соединяя традиции и технологии, фольклор и футуризм, личное и историческое. Каждая работа — нарисованная, вылепленная, анимированная или сыгранная — становится нитью в большом культурном полотне.",
 
         early_years_title: "Ранние годы и образование (1982–1994)",
         early_years_text_first: "В начале 1980-х Берик Жунусбек начал свой путь на легендарной студии «Казахфильм» имени Шакена Айманова. Он погрузился в кропотливое ремесло анимации, начав как художник по раскраске и чистке кадров, а затем став ключевым аниматором. Эти фундаментальные годы отточили не только его навыки рисунка, но и привили глубокое чувство кинематографического ритма и визуального повествования.",
@@ -76,7 +76,7 @@ const translations = {
         animation_text_third: "В 2013 году Берик вновь появился на экране — в роли Абао Аброева в телевизионной драме «Офицерская честь», напомнив зрителям о своём многогранном таланте как художника.",
 
         mentorship_title: "Преподавание и новые поиски (2014–настоящее время)",
-        mentorship_text_first: "Преданность Беріка образованию усилилась в 2014 году, когда он присоединился к Казахскому национальному университету искусств (КазНУИ) в качестве старшего преподавателя анимации. По приглашению ректора Айман Мусахаджаевой он привнёс в аудиторию десятилетия профессионального опыта.",
+        mentorship_text_first: "Преданность Берика образованию усилилась в 2014 году, когда он присоединился к Казахскому национальному университету искусств (КазНУИ) в качестве старшего преподавателя анимации. По приглашению ректора Айман Мусахаджаевой он привнёс в аудиторию десятилетия профессионального опыта.",
         mentorship_text_second: "19 декабря 2014 года он провёл ещё одну крупную выставку, где представил скульптуру, графику, фотографии и работы по полиграфическому дизайну. Экспозицию сопровождал специально подготовленный 29-минутный фильм, рассказывавший о его жизненном пути — от анимационных роликов до фрагментов фильмов и рекламных клипов.",
         mentorship_text_third: "С 2016 по 2017 годы он возглавлял кафедру кино и телевидения КазНУИ, а теперь продолжает работать доцентом. Его преподавание объединяет классические дисциплины с современным программным обеспечением, побуждая студентов создавать работы, которые одновременно сохраняют национальную идентичность и открыты к инновациям.",
 
@@ -95,7 +95,7 @@ const translations = {
         about: "Мен туралы",
         works: "Жұмыстар",
         title: "Берік Жүнісбек",
-        rights: "© 2024 Берік Жүнісбек. Барлық құқықтар қорғалған.",
+        rights: "© 2025 Берік Жүнісбек. Барлық құқықтар қорғалған.",
         first_skills: "Мүсінші • Аниматор • Компьютерлік графика режиссері • Фотограф • Актер",
         first_title: "Берік Жүнісбек",
         second_title: "Көп қырлы өнер иесі",
@@ -108,10 +108,10 @@ const translations = {
         early_years_text_second: "1990-жылдардың басына қарай Берік «Дәуқара Көкетай», «Қанбақ Шал», «Емен жаңғағы мен скрипка», «Қотыр Торғай» сияқты әйгілі қазақ анимациялық фильмдеріне елеулі үлес қосты. Бұл туындылар көптеген беделді марапаттарға ие болып, оны қазақ анимациясының басты тұлғаларының біріне айналдырды.",
         early_years_text_third: "1994 жылы ол өзінің алғашқы жеке көрмесін Кино үйінде өткізді. Көрмеде акварельдік суреттер, мүсіндер және анимациялық пен көркем фильмдерге арналған эскиздер ұсынылды — бұл оның көпқырлы шығармашылық әлеміне сирек мүмкіндік берді.",
 
-        cinema_title: "Кино және дизайнға көшу (1994-2000)",
-        cinema_text_first: "1994 год стал переломным моментом: Берику предложили работу художником-постановщиком в историческом фильме «Абылайхан», который получил признание критиков и до сих пор сохраняет актуальность. В том же году он совмещал роли в документальных и телевизионных проектах — как художник-постановщик и актёр, в частности, сыграв дервиша в документальном сериале «Казахи».",
-        cinema_text_second: "В середине 1990-х он вышел на цифровой рубеж, создав первые в Казахстане 2D и 3D анимационные заставки и промо-ролики для телевизионных студий, таких как «Дала-TV». Его работа в Президентском телевидении и радиокомплексе — включая разработку официального эмблемы и создание новаторского 7-минутного анимационного фильма «Стратегия 2030» — стала доказательством его мастерства в объединении традиционного искусства с передовыми технологиями.",
-        cinema_text_third: "Он также работал над множеством телевизионных заставок, рекламных роликов и даже первыми CGI-эффектами для детского художественного фильма «Волшебный спонсор». Как актёр он участвовал в рекламе и президентских кампаниях, сочетая визуальное искусство с живым выступлением.",
+        cinema_title: "Кино және дизайнға көшу (1994–2000)",
+        cinema_text_first: "1994 жылы Берік үшін маңызды бұрылыс болды: оған тарихи фильм «Абылайханда» суретші-қоюшы ретінде жұмыс істеу ұсынылды, бұл фильм сыншылардың мойындауына ие болды және бүгінгі күнге дейін өзектілігін сақтап қалды. Сол жылы ол деректі және теледидар жобаларында екі рөлді біріктірді — суретші-қоюшы және актер ретінде, атап айтқанда, «Қазақтар» деректі сериалында дервиш рөлін сомдады.",
+        cinema_text_second: "1990-жылдардың ортасында ол цифрлық шекараға шығып, Қазақстанда алғаш рет «Дала-TV» сияқты теледидар студиялары үшін 2D және 3D анимациялық заставкалар мен промо-роликтер жасады. Оның Президенттік теледидар және радиокомплекстегі жұмысы — ресми эмблеманы әзірлеу және инновациялық 7 минуттық анимациялық фильм «2030 Стратегиясын» жасау — дәстүрлі өнерді озық технологиялармен біріктірудегі оның шеберлігінің дәлелі болды.",
+        cinema_text_third: "Ол сондай-ақ көптеген теледидар заставкалары, жарнамалық роликтер және тіпті балаларға арналған көркем фильм «Сиқырлы демеуші» үшін алғашқы CGI-эффектілердің жұмысына қатысты. Актер ретінде ол жарнамаға және президенттік науқандарға қатысып, көрнекі өнерді тікелей орындаумен біріктірді.",
 
         print_title: "Баспада және теледидарда визуалды жетекшілік (2000–2007)",
         print_text: "2000-жылдары Берік визуалды коммуникация саласында көшбасшы болды. Ол «Қазақстан-1» телеарнасының толық фирмалық стилін жасап, заманауи көрнекі тіл қалыптастырды. Сонымен қатар ол «Айгөлек», «Гүлстан» және AIT журналдарында редактор болып жұмыс істеді. 2016 жылы Қарағандыда «Әкеме арнау» атты көрмесін өткізді.",

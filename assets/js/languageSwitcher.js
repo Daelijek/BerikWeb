@@ -6,16 +6,25 @@ document.addEventListener("DOMContentLoaded", function () {
   const hamburger = document.getElementById("hamburger");
   const sidebar = document.getElementById("mobileSidebar");
 
-  hamburger.addEventListener("click", () => {
-    sidebar.classList.toggle("active");
-  });
+  // Инициализация hamburger меню
+  if (hamburger && sidebar) {
+    hamburger.addEventListener("click", () => {
+      sidebar.classList.toggle("active");
+      // Обновляем aria-expanded для доступности
+      const isActive = sidebar.classList.contains("active");
+      hamburger.setAttribute("aria-expanded", isActive);
+    });
 
-  // Закрытие по клику вне сайдбара (опционально)
-  document.addEventListener("click", (e) => {
-    if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
-      sidebar.classList.remove("active");
-    }
-  });
+    // Закрытие по клику вне сайдбара
+    document.addEventListener("click", (e) => {
+      if (sidebar.classList.contains("active") && 
+          !sidebar.contains(e.target) && 
+          !hamburger.contains(e.target)) {
+        sidebar.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   // Применяем сохраненный язык
   if (languageSelector) languageSelector.value = savedLang;
@@ -43,6 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function updatePageLanguage(lang, isInitialLoad) {
+    // Обновляем lang атрибут HTML для SEO и доступности
+    document.documentElement.lang = lang;
+    
     // Применяем настройки шрифта
     applyFontSettings(lang);
 
@@ -83,7 +95,20 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateMainTexts(lang) {
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      el.innerHTML = translations.getTranslation(lang, key);
+      const translation = translations.getTranslation(lang, key);
+      
+      // Специальная обработка для quote - сохраняем изображение
+      if (key === "quote") {
+        const img = el.querySelector("img");
+        if (img) {
+          // Сохраняем изображение и добавляем текст после него
+          el.innerHTML = img.outerHTML + " " + translation;
+        } else {
+          el.innerHTML = translation;
+        }
+      } else {
+        el.innerHTML = translation;
+      }
     });
   }
 

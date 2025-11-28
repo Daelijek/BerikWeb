@@ -98,7 +98,7 @@ const artworks = [
     },
     category: {
       en: "Drawing",
-      ru: "Картина",
+      ru: "Рисунок",
       kz: "Сурет",
     },
     type: "drawing",
@@ -112,7 +112,7 @@ const artworks = [
     },
     category: {
       en: "Drawing",
-      ru: "Картина",
+      ru: "Рисунок",
       kz: "Сурет",
     },
     type: "drawing",
@@ -1231,8 +1231,8 @@ const artworks = [
       kz: "",
     },
     category: {
-      en: "Photo",
-      ru: "Фотография",
+      en: "Photos",
+      ru: "Фотографии",
       kz: "Фотосуреттер",
     },
     type: "photos",
