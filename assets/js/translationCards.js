@@ -70,6 +70,66 @@ const translations = {
         motherDetailFinish: "Finish: Natural oil, matte",
         motherDetailYear: "Year: 2024",
         
+        // noName1
+        noName1Title: "Sculpture",
+        noName1ConceptText: "This wooden sculpture explores the dynamic relationship between form and space, creating a sense of movement and energy through carefully carved surfaces. The work demonstrates a balance between abstract expression and representational elements, inviting viewers to interpret the piece through their own perspective.",
+        noName1ProcessText: "Handcrafted from a single piece of wood using traditional carving techniques. The artist employed chisels and carving knives to create smooth transitions and textured surfaces. The natural grain of the wood was preserved to enhance the organic quality of the sculpture, with careful attention to detail in the finishing process.",
+        noName1DetailMaterial: "Material: Wood",
+        noName1DetailHeight: "Height: ~35–40 cm",
+        noName1DetailTools: "Tools: Chisels, carving knives, rasps",
+        noName1DetailFinish: "Finish: Natural matte surface",
+        noName1DetailYear: "Year: 1990s–2000s",
+        
+        // noName2
+        noName2Title: "Sculpture",
+        noName2ConceptText: "This sculpture represents a study in geometric abstraction and organic flow. The interplay between sharp angles and smooth curves creates visual tension, while the natural wood grain adds depth and character to the piece. The work invites contemplation on the relationship between structure and fluidity.",
+        noName2ProcessText: "Created through traditional woodworking methods, this piece required careful planning and precise execution. The artist used a combination of chisels, gouges, and sanding tools to achieve the desired forms. The finishing process emphasized the natural beauty of the wood while maintaining clean, defined edges.",
+        noName2DetailMaterial: "Material: Wood",
+        noName2DetailHeight: "Height: ~30–35 cm",
+        noName2DetailTools: "Tools: Chisels, gouges, sandpaper",
+        noName2DetailFinish: "Finish: Natural oil, matte",
+        noName2DetailYear: "Year: 1990s–2000s",
+        
+        // noName3
+        noName3Title: "Sculpture",
+        noName3ConceptText: "A contemplative piece that explores the essence of form through reduction and simplification. The sculpture emphasizes negative space and the relationship between solid and void, creating a meditative quality that encourages quiet reflection. The minimalist approach allows the natural material to speak for itself.",
+        noName3ProcessText: "Meticulously carved from a single block of wood, this sculpture required careful removal of material to achieve the desired form. The artist worked with traditional hand tools, paying close attention to the wood's natural characteristics. The surface was finished with fine sanding to create a smooth, tactile quality that invites touch.",
+        noName3DetailMaterial: "Material: Wood",
+        noName3DetailHeight: "Height: ~40–45 cm",
+        noName3DetailTools: "Tools: Chisels, rasps, sandpaper",
+        noName3DetailFinish: "Finish: Natural oil, matte",
+        noName3DetailYear: "Year: 1990s–2000s",
+        
+        // noName4
+        noName4Title: "Sculpture",
+        noName4ConceptText: "This work explores the expressive potential of wood through bold forms and dramatic contrasts. The sculpture captures a moment of transformation, where the material seems to be in a state of becoming. The interplay of light and shadow across the carved surfaces adds depth and movement to the piece.",
+        noName4ProcessText: "Carved using traditional hand tools, this sculpture required both technical skill and artistic intuition. The artist worked with the wood's natural properties, allowing the grain to influence the direction of the carving. Multiple stages of refinement were necessary to achieve the final form, with careful attention to surface texture and finish.",
+        noName4DetailMaterial: "Material: Wood",
+        noName4DetailHeight: "Height: ~35–40 cm",
+        noName4DetailTools: "Tools: Chisels, carving knives, rasps",
+        noName4DetailFinish: "Finish: Natural matte surface",
+        noName4DetailYear: "Year: 1990s–2000s",
+        
+        // noName5
+        noName5Title: "Sculpture",
+        noName5ConceptText: "This sculpture embodies a sense of rhythm and flow through its undulating forms. The work demonstrates how wood can be shaped to suggest movement and energy, creating a dynamic composition that changes as the viewer moves around it. The organic curves contrast with precise geometric elements, creating visual interest.",
+        noName5ProcessText: "Crafted through a combination of subtractive and additive techniques, this piece required careful planning and execution. The artist used various carving tools to create smooth transitions and defined edges. The finishing process involved multiple stages of sanding and oil application to enhance the wood's natural beauty.",
+        noName5DetailMaterial: "Material: Wood",
+        noName5DetailHeight: "Height: ~38–42 cm",
+        noName5DetailTools: "Tools: Chisels, gouges, sandpaper",
+        noName5DetailFinish: "Finish: Natural oil, matte",
+        noName5DetailYear: "Year: 1990s–2000s",
+        
+        // noName6
+        noName6Title: "Sculpture",
+        noName6ConceptText: "A study in texture and form, this sculpture reveals the artist's sensitivity to the material's inherent qualities. The work balances refined surfaces with areas of raw, unpolished wood, creating a dialogue between the crafted and the natural. The composition suggests both stability and potential movement.",
+        noName6ProcessText: "Created through traditional woodworking methods, this piece showcases the artist's mastery of the material. The carving process involved careful consideration of the wood's grain and natural characteristics. Selective finishing techniques were applied to highlight certain areas while preserving the raw beauty of others.",
+        noName6DetailMaterial: "Material: Wood",
+        noName6DetailHeight: "Height: ~32–38 cm",
+        noName6DetailTools: "Tools: Chisels, rasps, sandpaper",
+        noName6DetailFinish: "Finish: Mixed (natural and polished areas)",
+        noName6DetailYear: "Year: 1990s–2000s",
+        
         // Настройки шрифта
         font_family: "'Space Grotesk', sans-serif",
         font_weight: "400",
@@ -145,6 +205,66 @@ const translations = {
         motherDetailTools: "Инструменты: Долота, напильники, наждачная бумага",
         motherDetailFinish: "Отделка: Натуральное масло, матовая",
         motherDetailYear: "Год: 2024",
+        
+        // noName1
+        noName1Title: "Скульптура",
+        noName1ConceptText: "Эта деревянная скульптура исследует динамические отношения между формой и пространством, создавая ощущение движения и энергии через тщательно вырезанные поверхности. Работа демонстрирует баланс между абстрактным выражением и репрезентативными элементами, приглашая зрителей интерпретировать произведение через свою собственную перспективу.",
+        noName1ProcessText: "Изготовлена вручную из одного куска дерева с использованием традиционных техник резьбы. Художник использовал долота и резцы для создания плавных переходов и текстурированных поверхностей. Естественная текстура дерева была сохранена для усиления органического качества скульптуры, с тщательным вниманием к деталям в процессе отделки.",
+        noName1DetailMaterial: "Материал: Дерево",
+        noName1DetailHeight: "Высота: ~35–40 см",
+        noName1DetailTools: "Инструменты: Долота, резцы, напильники",
+        noName1DetailFinish: "Отделка: Натуральная матовая поверхность",
+        noName1DetailYear: "Год: 1990-е–2000-е",
+        
+        // noName2
+        noName2Title: "Скульптура",
+        noName2ConceptText: "Эта скульптура представляет собой исследование геометрической абстракции и органического потока. Взаимодействие между острыми углами и плавными кривыми создаёт визуальное напряжение, в то время как естественная текстура дерева добавляет глубину и характер произведению. Работа приглашает к размышлению о связи между структурой и текучестью.",
+        noName2ProcessText: "Создана традиционными методами деревообработки, эта работа требовала тщательного планирования и точного исполнения. Художник использовал комбинацию долот, стамесок и шлифовальных инструментов для достижения желаемых форм. Процесс отделки подчёркивал естественную красоту дерева, сохраняя при этом чистые, чёткие края.",
+        noName2DetailMaterial: "Материал: Дерево",
+        noName2DetailHeight: "Высота: ~30–35 см",
+        noName2DetailTools: "Инструменты: Долота, стамески, наждачная бумага",
+        noName2DetailFinish: "Отделка: Натуральное масло, матовая",
+        noName2DetailYear: "Год: 1990-е–2000-е",
+        
+        // noName3
+        noName3Title: "Скульптура",
+        noName3ConceptText: "Созерцательное произведение, исследующее сущность формы через редукцию и упрощение. Скульптура подчёркивает негативное пространство и отношения между твёрдым и пустым, создавая медитативное качество, побуждающее к тихому размышлению. Минималистический подход позволяет естественному материалу говорить сам за себя.",
+        noName3ProcessText: "Тщательно вырезана из одного блока дерева, эта скульптура требовала аккуратного удаления материала для достижения желаемой формы. Художник работал с традиционными ручными инструментами, уделяя пристальное внимание естественным характеристикам дерева. Поверхность была отделана тонкой шлифовкой для создания гладкого, тактильного качества, приглашающего к прикосновению.",
+        noName3DetailMaterial: "Материал: Дерево",
+        noName3DetailHeight: "Высота: ~40–45 см",
+        noName3DetailTools: "Инструменты: Долота, напильники, наждачная бумага",
+        noName3DetailFinish: "Отделка: Натуральное масло, матовая",
+        noName3DetailYear: "Год: 1990-е–2000-е",
+        
+        // noName4
+        noName4Title: "Скульптура",
+        noName4ConceptText: "Эта работа исследует выразительный потенциал дерева через смелые формы и драматические контрасты. Скульптура запечатлевает момент трансформации, где материал, кажется, находится в состоянии становления. Взаимодействие света и тени на вырезанных поверхностях добавляет глубину и движение произведению.",
+        noName4ProcessText: "Вырезана с использованием традиционных ручных инструментов, эта скульптура требовала как технического мастерства, так и художественной интуиции. Художник работал с естественными свойствами дерева, позволяя текстуре влиять на направление резьбы. Для достижения окончательной формы потребовалось несколько этапов доработки, с тщательным вниманием к текстуре поверхности и отделке.",
+        noName4DetailMaterial: "Материал: Дерево",
+        noName4DetailHeight: "Высота: ~35–40 см",
+        noName4DetailTools: "Инструменты: Долота, резцы, напильники",
+        noName4DetailFinish: "Отделка: Натуральная матовая поверхность",
+        noName4DetailYear: "Год: 1990-е–2000-е",
+        
+        // noName5
+        noName5Title: "Скульптура",
+        noName5ConceptText: "Эта скульптура воплощает ощущение ритма и потока через свои волнистые формы. Работа демонстрирует, как дерево может быть сформировано, чтобы намекнуть на движение и энергию, создавая динамичную композицию, которая меняется по мере того, как зритель движется вокруг неё. Органические кривые контрастируют с точными геометрическими элементами, создавая визуальный интерес.",
+        noName5ProcessText: "Изготовлена через комбинацию субтрактивных и аддитивных техник, эта работа требовала тщательного планирования и исполнения. Художник использовал различные резные инструменты для создания плавных переходов и определённых краёв. Процесс отделки включал несколько этапов шлифовки и нанесения масла для усиления естественной красоты дерева.",
+        noName5DetailMaterial: "Материал: Дерево",
+        noName5DetailHeight: "Высота: ~38–42 см",
+        noName5DetailTools: "Инструменты: Долота, стамески, наждачная бумага",
+        noName5DetailFinish: "Отделка: Натуральное масло, матовая",
+        noName5DetailYear: "Год: 1990-е–2000-е",
+        
+        // noName6
+        noName6Title: "Скульптура",
+        noName6ConceptText: "Исследование текстуры и формы, эта скульптура раскрывает чувствительность художника к присущим материалу качествам. Работа балансирует между утончёнными поверхностями и областями сырого, необработанного дерева, создавая диалог между обработанным и естественным. Композиция предполагает как стабильность, так и потенциальное движение.",
+        noName6ProcessText: "Создана традиционными методами деревообработки, эта работа демонстрирует мастерство художника в работе с материалом. Процесс резьбы включал тщательное рассмотрение текстуры и естественных характеристик дерева. Селективные техники отделки были применены для выделения определённых областей, сохраняя при этом сырую красоту других.",
+        noName6DetailMaterial: "Материал: Дерево",
+        noName6DetailHeight: "Высота: ~32–38 см",
+        noName6DetailTools: "Инструменты: Долота, напильники, наждачная бумага",
+        noName6DetailFinish: "Отделка: Смешанная (натуральные и полированные области)",
+        noName6DetailYear: "Год: 1990-е–2000-е",
 
         // Настройки шрифта
         font_family: "'Manrope', sans-serif",
@@ -221,6 +341,66 @@ const translations = {
         motherDetailTools: "Құралдар: Кескіштер, егеуіштер, зымыран",
         motherDetailFinish: "Беткі өңдеу: Табиғи май, матты",
         motherDetailYear: "Жылы: 2024",
+        
+        // noName1
+        noName1Title: "Мүсін",
+        noName1ConceptText: "Бұл ағаш мүсін форма мен кеңістік арасындағы динамикалық қатынасты зерттейді, мұқият ойылған беттер арқылы қозғалыс пен энергия сезімін тудырады. Бұл жұмыс абстрактілі өрнек пен бейнелеу элементтері арасындағы тепе-теңдікті көрсетеді, көрермендерді өз перспективасы арқылы шығарманы түсіндіруге шақырады.",
+        noName1ProcessText: "Дәстүрлі ою техникаларын пайдаланып бір ағаш бөлігінен қолмен жасалған. Суретші тегіс ауысулар мен текстураланған беттерді жасау үшін кескіштер мен пышақтарды қолданды. Ағаштың табиғи талшығы мүсіннің органикалық сапасын арттыру үшін сақталды, беткі өңдеу процесінде детальдарға мұқият назар аударылды.",
+        noName1DetailMaterial: "Материал: Ағаш",
+        noName1DetailHeight: "Биіктігі: ~35–40 см",
+        noName1DetailTools: "Құралдар: Кескіштер, пышақтар, егеуіштер",
+        noName1DetailFinish: "Беткі өңдеу: Табиғи матты бет",
+        noName1DetailYear: "Жылы: 1990-шы–2000-ші",
+        
+        // noName2
+        noName2Title: "Мүсін",
+        noName2ConceptText: "Бұл мүсін геометриялық абстракция мен органикалық ағымды зерттейді. Өткір бұрыштар мен тегіс қисықтар арасындағы өзара әрекеттесу көрнекі кернеу тудырады, ал табиғи ағаш талшығы шығармаға тереңдік пен сипат қосады. Бұл жұмыс құрылым мен сұйықтық арасындағы қатынас туралы ойлауға шақырады.",
+        noName2ProcessText: "Дәстүрлі ағаш өңдеу әдістері арқылы жасалған, бұл шығарма мұқият жоспарлау мен дәл орындауды талап етті. Суретші қалаған формаларға қол жеткізу үшін кескіштер, стамескалар және тегістеу құралдарының комбинациясын қолданды. Беткі өңдеу процесі таза, анықталған жиектерді сақтай отырып, ағаштың табиғи сұлулығын ерекше көрсетті.",
+        noName2DetailMaterial: "Материал: Ағаш",
+        noName2DetailHeight: "Биіктігі: ~30–35 см",
+        noName2DetailTools: "Құралдар: Кескіштер, стамескалар, зымыран",
+        noName2DetailFinish: "Беткі өңдеу: Табиғи май, матты",
+        noName2DetailYear: "Жылы: 1990-шы–2000-ші",
+        
+        // noName3
+        noName3Title: "Мүсін",
+        noName3ConceptText: "Бұл мүсін редукция мен жеңілдету арқылы форманың мәнін зерттейтін ойшыл шығарма. Мүсін негативті кеңістікті және қатты мен бос арасындағы қатынасты ерекше көрсетеді, тыныш ойлауға шақыратын медитациялық сапа тудырады. Минималистік тәсіл табиғи материалға өзі үшін сөйлеуге мүмкіндік береді.",
+        noName3ProcessText: "Бір ағаш блогынан мұқият ойылған, бұл мүсін қалаған формаға қол жеткізу үшін материалды мұқият алып тастауды талап етті. Суретші дәстүрлі қол құралдарымен жұмыс істеді, ағаштың табиғи сипаттамаларына мұқият назар аударды. Бет жұмсақ тегістеу арқылы аяқталды, тиюге шақыратын тегіс, тактильді сапа жасау үшін.",
+        noName3DetailMaterial: "Материал: Ағаш",
+        noName3DetailHeight: "Биіктігі: ~40–45 см",
+        noName3DetailTools: "Құралдар: Кескіштер, егеуіштер, зымыран",
+        noName3DetailFinish: "Беткі өңдеу: Табиғи май, матты",
+        noName3DetailYear: "Жылы: 1990-шы–2000-ші",
+        
+        // noName4
+        noName4Title: "Мүсін",
+        noName4ConceptText: "Бұл жұмыс батыл формалар мен драмалық контрастар арқылы ағаштың өрнектеу әлеуетін зерттейді. Мүсін трансформация сәтін қамтиды, мұнда материал болу күйінде сияқты. Ойылған беттердегі жарық пен көлеңкенің өзара әрекеттесуі шығармаға тереңдік пен қозғалыс қосады.",
+        noName4ProcessText: "Дәстүрлі қол құралдарын пайдаланып ойылған, бұл мүсін техникалық дағды мен көркем интуицияны талап етті. Суретші ағаштың табиғи қасиеттерімен жұмыс істеді, талшыққа ою бағытына әсер етуге мүмкіндік берді. Соңғы формаға қол жеткізу үшін бірнеше жетілдіру кезеңдері қажет болды, бет текстурасы мен беткі өңдеуге мұқият назар аударылды.",
+        noName4DetailMaterial: "Материал: Ағаш",
+        noName4DetailHeight: "Биіктігі: ~35–40 см",
+        noName4DetailTools: "Құралдар: Кескіштер, пышақтар, егеуіштер",
+        noName4DetailFinish: "Беткі өңдеу: Табиғи матты бет",
+        noName4DetailYear: "Жылы: 1990-шы–2000-ші",
+        
+        // noName5
+        noName5Title: "Мүсін",
+        noName5ConceptText: "Бұл мүсін толқынды формалар арқылы ритм мен ағым сезімін бейнелейді. Бұл жұмыс ағаштың қозғалыс пен энергияны ұсыну үшін қалай пішінделуі мүмкін екенін көрсетеді, көрермен оның айналасында қозғалғанда өзгеретін динамикалық композиция жасайды. Органикалық қисықтар дәл геометриялық элементтермен қарама-қайшы келеді, көрнекі қызығушылық тудырады.",
+        noName5ProcessText: "Субтрактивті және аддитивті техникалардың комбинациясы арқылы жасалған, бұл шығарма мұқият жоспарлау мен орындауды талап етті. Суретші тегіс ауысулар мен анықталған жиектерді жасау үшін әртүрлі ою құралдарын қолданды. Беткі өңдеу процесі ағаштың табиғи сұлулығын арттыру үшін бірнеше тегістеу және май қолдану кезеңдерін қамтиды.",
+        noName5DetailMaterial: "Материал: Ағаш",
+        noName5DetailHeight: "Биіктігі: ~38–42 см",
+        noName5DetailTools: "Құралдар: Кескіштер, стамескалар, зымыран",
+        noName5DetailFinish: "Беткі өңдеу: Табиғи май, матты",
+        noName5DetailYear: "Жылы: 1990-шы–2000-ші",
+        
+        // noName6
+        noName6Title: "Мүсін",
+        noName6ConceptText: "Текстура мен форманы зерттейтін бұл мүсін суретшінің материалдың тән сапаларына сезімталдығын ашып көрсетеді. Бұл жұмыс жетілдірілген беттерді шикі, өңделмеген ағаш аймақтарымен теңестіреді, өңделген мен табиғи арасындағы диалог жасайды. Композиция тұрақтылықты да, ықтимал қозғалысты да ұсынады.",
+        noName6ProcessText: "Дәстүрлі ағаш өңдеу әдістері арқылы жасалған, бұл шығарма суретшінің материалбен жұмыс істеудегі шеберлігін көрсетеді. Ою процесі ағаштың талшығы мен табиғи сипаттамаларын мұқият ескеруді қамтиды. Белгілі бір аймақтарды ерекше көрсету үшін селективті беткі өңдеу техникалары қолданылды, басқалардың шикі сұлулығын сақтай отырып.",
+        noName6DetailMaterial: "Материал: Ағаш",
+        noName6DetailHeight: "Биіктігі: ~32–38 см",
+        noName6DetailTools: "Құралдар: Кескіштер, егеуіштер, зымыран",
+        noName6DetailFinish: "Беткі өңдеу: Аралас (табиғи және жылтырланған аймақтар)",
+        noName6DetailYear: "Жылы: 1990-шы–2000-ші",
 
         // Настройки шрифта
         font_family: "'Manrope', sans-serif",
