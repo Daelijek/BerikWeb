@@ -262,6 +262,31 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 .title {
   font-weight: 600;
   font-size: 96px;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(26, 86, 219, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #ffffff;
+  animation: fadeInUp 0.8s ease-out;
+  margin-bottom: 20px;
+}
+
+@supports not (-webkit-background-clip: text) {
+  .title {
+    color: #ffffff;
+    background: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .title_label {
@@ -269,6 +294,7 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
   margin-bottom: 25px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
 .description {
@@ -276,6 +302,8 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   font-size: 18px;
   width: 50%;
   margin: auto;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 @media (max-width: 1024px) {
@@ -345,6 +373,19 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   font-weight: 600;
   font-size: 48px;
   margin-bottom: 50px;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(26, 86, 219, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #ffffff;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@supports not (-webkit-background-clip: text) {
+  .works_title {
+    color: #ffffff;
+    background: none;
+  }
 }
 
 .cards_list {
@@ -363,10 +404,21 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   width: 100%;
   max-width: 400px; /* Максимальная ширина карточки */
   box-sizing: border-box;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  animation: fadeInUp 0.6s ease-out both;
 }
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
 
 .card.hidden {
   display: none;
@@ -379,14 +431,38 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
 }
 
 /* Остальные стили без изменений */
+.card a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.card a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(26, 86, 219, 0.1) 0%, rgba(26, 86, 219, 0.3) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 12px;
+}
+
 .card img {
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 15px;
   width: 100%;
   height: 321px; /* Фиксированная высота */
   object-fit: cover; /* Обрезаем изображение чтобы заполнить пространство */
   object-position: center; /* Центрируем изображение */
-  transition: transform 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: block;
 }
 
 /* Для мобильных устройств */
@@ -422,14 +498,32 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   display: inline;
   font-weight: 400;
   font-size: 14px;
-  background-color: rgba(26, 86, 219, 0.2);
+  background: linear-gradient(135deg, rgba(26, 86, 219, 0.2) 0%, rgba(26, 86, 219, 0.3) 100%);
   padding: 5px 10px;
   border-radius: 100px;
   margin-top: auto; /* Прижимаем описание к низу карточки */
+  border: 1px solid rgba(26, 86, 219, 0.3);
+  transition: all 0.3s ease;
 }
 
-.card img:hover {
-  transform: scale(1.02);
+.card:hover .card_description {
+  background: linear-gradient(135deg, rgba(26, 86, 219, 0.3) 0%, rgba(26, 86, 219, 0.4) 100%);
+  border-color: rgba(26, 86, 219, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 86, 219, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(26, 86, 219, 0.3);
+}
+
+.card:hover a::after {
+  opacity: 1;
 }
 
 .card_title {
@@ -473,6 +567,30 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   );
   padding: 100px 20px 100px 20px;
   color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(26, 86, 219, 0.1) 0%, transparent 70%);
+  animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
 }
 
 .quote_inner {
@@ -492,6 +610,9 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   flex-direction: column;
   font-weight: 500;
   font-size: 36px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .quote_title img {
@@ -572,6 +693,19 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   font-weight: 600;
   font-size: 48px;
   margin-bottom: 20px;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(26, 86, 219, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #ffffff;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@supports not (-webkit-background-clip: text) {
+  .about_title {
+    color: #ffffff;
+    background: none;
+  }
 }
 
 .about_descr {
@@ -601,8 +735,21 @@ background: radial-gradient(circle, rgba(26,86,219,1) 0%, rgba(12,38,98,1) 0%, r
   height: 80%;
 }
 
+.about_img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 .about_img img {
   border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about_img:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(26, 86, 219, 0.4);
 }
 
 @media (max-width: 1024px) {

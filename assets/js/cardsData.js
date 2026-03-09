@@ -105,6 +105,96 @@ const artworks = [
     link: "../pages/detailedInfo/Sculpture/horses.html",
   },
   {
+    image: "../assets/images/sculptures/noName1/IMG-20251231-WA0031.webp",
+    title: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    category: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/noName1.html",
+  },
+  {
+    image: "../assets/images/sculptures/noName2/IMG-20251231-WA0002.webp",
+    title: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    category: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/noName2.html",
+  },
+  {
+    image: "../assets/images/sculptures/noName3/IMG-20251231-WA0018.webp",
+    title: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    category: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/noName3.html",
+  },
+  {
+    image: "../assets/images/sculptures/noName4/IMG-20251231-WA0039.webp",
+    title: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    category: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/noName4.html",
+  },
+  {
+    image: "../assets/images/sculptures/noName5/IMG-20251231-WA0023.webp",
+    title: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    category: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/noName5.html",
+  },
+  {
+    image: "../assets/images/sculptures/noName6/IMG-20251231-WA0057.webp",
+    title: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    category: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/noName6.html",
+  },
+  {
     image: "../assets/images/drawing/driver/Водитель.jpg",
     title: {
       en: "Driver",
@@ -113,7 +203,7 @@ const artworks = [
     },
     category: {
       en: "Drawing",
-      ru: "Картина",
+      ru: "Рисунок",
       kz: "Сурет",
     },
     type: "drawing",
@@ -127,7 +217,7 @@ const artworks = [
     },
     category: {
       en: "Drawing",
-      ru: "Картина",
+      ru: "Рисунок",
       kz: "Сурет",
     },
     type: "drawing",
@@ -1246,8 +1336,8 @@ const artworks = [
       kz: "",
     },
     category: {
-      en: "Photo",
-      ru: "Фотография",
+      en: "Photos",
+      ru: "Фотографии",
       kz: "Фотосуреттер",
     },
     type: "photos",

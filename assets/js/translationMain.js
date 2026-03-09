@@ -11,6 +11,7 @@ const translations = {
       "Creating at the intersection of traditional sculpture and digital art. Exploring the boundaries between physical and virtual spaces through immersive experiences and dynamic forms.",
     selected_works: "Selected Works",
     quote: "Everyone should do what they can.",
+    quote_author: "— Berik Zhunusbek",
     about_title: "ABOUT",
     about_descr:
       "As a multidisciplinary digital artist, I explore the intersection of sculpture, animation, and computer-generated imagery. My work seeks to bridge the gap between traditional artistic practices and cutting-edge technology, creating immersive experiences that challenge perception and reality.",
@@ -36,13 +37,14 @@ const translations = {
     about: "Обо мне",
     works: "Работы",
     title: "Берик Жунусбек",
-    rights: "© 2025 Берик Жунусбеков. Все права защищены",
+    rights: "© 2025 Берик Жунусбек. Все права защищены",
     title_label:
       "Скульптор • Аниматор • Режиссёр компьютерной графики • Фотограф • Актер",
     description:
       "Создаю на стыке традиционной скульптуры и цифрового искусства. Исследую границы между физическим и виртуальным пространством через иммерсивный опыт и динамичные формы.",
     selected_works: "Избранные работы",
     quote: "Каждый должен делать то, что может.",
+    quote_author: "— Берик Жунусбек",
     about_title: "ОБО МНЕ",
     about_descr:
       "Как мультидисциплинарный цифровой художник, я исследую пересечение скульптуры, анимации и компьютерной графики. Моя работа направлена на объединение традиционных художественных практик и передовых технологий, создавая иммерсивные впечатления, которые бросают вызов восприятию и реальности.",
@@ -71,13 +73,14 @@ const translations = {
       "Дәстүрлі мүсін мен цифрлық өнердің түйіскен жерінде жасаймын. Иммерсивті тәжірибе мен динамикалық формалар арқылы физикалық және Виртуалды кеңістік арасындағы шекараларды зерттеймін.",
     selected_works: "Таңдаулы жұмыстар",
     quote: "Әркім өзінің қолынан келетін істі жасауы керек.",
+    quote_author: "— Берік Жүнісбек",
     about_title: "МЕН ТУРАЛЫ",
     about_descr:
       "Көпсалалы цифрлық суретші ретінде мен мүсіннің, анимацияның және компьютерлік графиканың қиылысын зерттеймін. Менің жұмысым дәстүрлі көркемдік тәжірибелер мен озық технологияларды біріктіруге, қабылдау мен шындықты сынайтын иммерсивті тәжірибе жасауға бағытталған.",
     skills_first:
-      "3D Модельдеу <br><br>Қозғалыс дизайны <br><br>Концепт-арт <br><br>Виртуалды шындық",
+      "3D Модельдеу <br><br>Мүсінші <br><br>Концепт-арт <br><br>Виртуалды шындық",
     skills_second:
-      "Цифрлық мүсін <br><br>Мүсін <br><br>Көрнекі эффектілер <br><br>Интерактивті дизайн",
+      "Цифрлық мүсін <br><br>Кейіпкер анимациясы <br><br>Көрнекі эффектілер <br><br>Интерактивті дизайн",
     font_family: "'Manrope', sans-serif",
     font_weight: "500",
     letter_spacing: "-0.01em",
