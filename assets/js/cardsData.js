@@ -90,6 +90,21 @@ const artworks = [
     link: "../pages/detailedInfo/Sculpture/deer.html",
   },
   {
+    image: "../assets/images/sculptures/horses/horses9.jpeg",
+    title: {
+      en: "Horses",
+      ru: "Лошади",
+      kz: "Аттар",
+    },
+    category: {
+      en: "Sculpture",
+      ru: "Скульптура",
+      kz: "Мүсін",
+    },
+    type: "sculpture",
+    link: "../pages/detailedInfo/Sculpture/horses.html",
+  },
+  {
     image: "../assets/images/drawing/driver/Водитель.jpg",
     title: {
       en: "Driver",

@@ -1008,6 +1008,218 @@ b {
   }
 }
 
+/* Eight Block - Media Appearances with Videos */
+.eight_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: left;
+}
+
+.eight_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.eight_info .text {
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.videos_container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.video_block_item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video_title {
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+}
+
+.video_description {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+.video_wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(26, 86, 219, 0.2);
+  background-color: #000;
+}
+
+.video_player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  display: none;
+}
+
+/* Video poster with play button */
+.video_poster {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.video_poster:hover {
+  opacity: 0.95;
+}
+
+.video_poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  border-radius: 12px;
+}
+
+.play_button {
+  position: absolute;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.video_poster:hover .play_button {
+  transform: scale(1.1);
+}
+
+.video_duration {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+/* Responsive styles for eight block */
+@media (max-width: 1024px) {
+  .eight_inner {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .eight_info .text {
+    font-size: 17px;
+  }
+
+  .video_title {
+    font-size: 22px;
+  }
+
+  .video_description {
+    font-size: 15px;
+  }
+
+  .play_button svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .eight_inner {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .videos_container {
+    gap: 40px;
+    margin-top: 30px;
+  }
+
+  .video_title {
+    font-size: 20px;
+  }
+
+  .video_description {
+    font-size: 14px;
+  }
+
+  .play_button svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .video_duration {
+    font-size: 12px;
+    padding: 6px 12px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eight_inner {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .eight_info .text {
+    font-size: 15px;
+  }
+
+  .videos_container {
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .video_title {
+    font-size: 18px;
+  }
+
+  .video_description {
+    font-size: 13px;
+  }
+
+  .play_button svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .video_duration {
+    font-size: 11px;
+    padding: 4px 10px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
 footer {
   background-color: #000;
   padding: 40px 20px 40px 20px;
